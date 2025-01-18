@@ -3,9 +3,11 @@ import NavBar from './NavBar/NavBar';
 
 const Header = () => {
   return (
-    <header className="headerWrapper">
-      <NavBar />
-    </header>
+    <div className="headerWrapper">
+      <header className="headerContainer">
+        <NavBar />
+      </header>
+    </div>
   );
 };
 
