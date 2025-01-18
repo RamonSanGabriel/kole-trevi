@@ -13,7 +13,7 @@ const Main = () => {
           </div>
           <div className="mainContainer">
             <Categories />
-            <h2>About me</h2>
+            <h2 className="aboutMe">About me</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
               velit eum facere neque similique. Corrupti quis illo, ab
