@@ -1,0 +1,42 @@
+.mainWrapper {
+  padding: 1rem 0 1rem;
+
+  & h1 {
+    margin: 0 auto;
+    padding: 1.5rem 0;
+  }
+
+  /*   @media (width > 767px) {
+    padding: 3rem 0 1rem;
+  } */
+}
+.heroContainer {
+  /* background-color: #e2e2e2; */
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+  background: linear-gradient(rgba(46, 47, 66, 0.071), rgba(46, 47, 66, 0.943)),
+    url('../../images/trev.png');
+
+  & img {
+    display: flex;
+    width: 100%;
+    object-fit: contain;
+
+    @media (width > 767px) {
+      height: 500px;
+    }
+  }
+}
+
+.mainContainer {
+  text-align: justify;
+  padding: 1rem 0;
+  margin: 0 auto;
+  @media (width > 767px) {
+    /* display: block; */
+    /* width: 100%; */
+  }
+
+  & h2 {
+    padding-bottom: 1rem;
+  }
+}

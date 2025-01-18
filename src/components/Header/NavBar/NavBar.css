@@ -1,0 +1,40 @@
+.navWrapper {
+  @media (width > 767px) {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.navListContainer {
+  display: flex;
+}
+.home,
+.profile,
+.services,
+.contacts,
+.help {
+  display: none;
+
+  @media (width > 767px) {
+    display: block;
+  }
+}
+.navList {
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 5rem; */
+}
+.logo {
+  background-color: #e76f51;
+  width: 60px;
+  border-radius: 100px;
+  padding: 2px;
+  /* margin-top: 5px; */
+}
+.trevi-icon {
+  width: 20px;
+}
