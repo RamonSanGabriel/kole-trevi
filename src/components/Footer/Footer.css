@@ -1,4 +1,8 @@
 .footerContainer {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  padding: 1rem;
   & p {
     font-size: 0.75rem;
   }
