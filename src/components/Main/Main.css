@@ -20,8 +20,11 @@
 .mainContainer {
   max-width: 1024px;
   text-align: justify;
-  padding: 1rem 0.5rem;
+  /* padding: 1rem; */
   margin: 0 auto;
+}
+.mainContent {
+  padding: 0 1rem;
 }
 .aboutMe {
   padding: 1rem 0;
