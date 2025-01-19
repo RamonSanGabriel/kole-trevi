@@ -39,3 +39,25 @@
 .trevi-icon {
   width: 20px;
 }
+.navListLink p {
+  color: var(--primary);
+  background-clip: text;
+  font-style: 700;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      purple
+    );
+    transform: scale(1.1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
