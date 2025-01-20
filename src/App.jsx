@@ -20,10 +20,10 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="" element={<ProfilePage />} />
-          <Route path="" element={<ContactsPage />} />
-          <Route path="" element={<ServicesPage />} />
-          <Route path="" element={HelpPage} />
+          <Route path="profile" element={<ProfilePage />} />
+          <Route path="contacts" element={<ContactsPage />} />
+          <Route path="services" element={<ServicesPage />} />
+          <Route path="help" element={HelpPage} />
         </Route>
       </Routes>
     </>
