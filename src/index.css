@@ -37,10 +37,7 @@ a {
   cursor: pointer;
 }
 a:hover {
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-  transform: scale(1.1);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  cursor: pointer;
 }
 
 body {

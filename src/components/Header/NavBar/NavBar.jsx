@@ -56,7 +56,7 @@ const NavBar = () => {
       <div className="navListContainer">
         <ul className="navList">
           {navLinks.map(({ id, link, path }) => (
-            <li key={id}>
+            <li className="navListItem" key={id}>
               <NavLink to={path}>{link}</NavLink>
             </li>
           ))}

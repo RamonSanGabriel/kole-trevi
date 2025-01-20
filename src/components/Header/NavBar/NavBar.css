@@ -23,6 +23,7 @@
 } */
 .navList {
   display: none;
+
   @media (width > 767px) {
     display: flex;
     gap: 1rem;
@@ -35,7 +36,7 @@
 .trevi-icon {
   width: 20px;
 }
-.navListLink p {
+.navListItem {
   color: var(--primary);
   background-clip: text;
   font-style: 700;

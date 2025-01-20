@@ -61,7 +61,7 @@
   padding: 0.3em 0.6em;
   color: var(--primary);
   background-clip: text;
-  transition: all 300ms ease-out;
+  transition: all 250ms ease-out;
 
   &:hover,
   &:focus {
