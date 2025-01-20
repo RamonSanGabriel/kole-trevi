@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Profile from '../../components/Profile/Profile';
 
-const profilePage = () => {
+const ProfilePage = () => {
   return (
     <HelmetProvider>
       <Helmet>
@@ -13,4 +13,4 @@ const profilePage = () => {
   );
 };
 
-export default profilePage;
+export default ProfilePage;

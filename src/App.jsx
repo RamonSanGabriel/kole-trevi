@@ -7,7 +7,7 @@ import Main from './components/Main/Main'; */
 import SharedLayout from './components/SharedLayout/SharedLayout';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
-const ProfilePage = lazy(() => import('./pages/ProfilePage/profilePage'));
+const ProfilePage = lazy(() => import('./pages/ProfilePage/ProfilePage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage/ServicesPage'));
 const ContactsPage = lazy(() => import('./pages/ContactsPage/contactsPage'));
 const HelpPage = lazy(() => import('./pages/HelpPage/HelpPage'));
