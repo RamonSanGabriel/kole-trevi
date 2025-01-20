@@ -30,6 +30,29 @@
 }
 .categoryContainer {
   padding: 0.8rem 0;
+
+  & h3 {
+    color: var(--primary);
+    background-clip: text;
+    font-style: 700;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        purple
+      );
+      transform: scale(1.1);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+  }
 }
 
 .categoryIcons {

@@ -25,6 +25,14 @@
 }
 .mainContent {
   padding: 0 1rem;
+
+  p {
+    text-indent: 70px;
+  }
+
+  h4 {
+    display: inline;
+  }
 }
 .aboutMe {
   padding: 1rem 0;
