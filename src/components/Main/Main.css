@@ -29,9 +29,9 @@
   p {
     text-indent: 25px;
   }
-
-  h4 {
+  strong {
     display: inline;
+    color: #575ff1;
   }
 }
 .aboutMe {

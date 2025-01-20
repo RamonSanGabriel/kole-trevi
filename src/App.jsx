@@ -1,15 +1,31 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Footer from './components/Footer/Footer';
+import { lazy } from 'react';
+import { Routes, Route } from 'react-router-dom';
+/* import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import Main from './components/Main/Main';
+import Main from './components/Main/Main'; */
+import SharedLayout from './components/SharedLayout/SharedLayout';
+const HomePage = lazy(() => import('./pages/HomePage/Homepage'));
+const ProfilePage = lazy(() => import('./pages/ProfilePage/profilePage'));
+const ServicesPage = lazy(() => import('./pages/ServicesPage/ServicesPage'));
+const ContactsPage = lazy(() => import('./pages/ContactsPage/contactsPage'));
+const HelpPage = lazy(() => import('./pages/HelpPage/HelpPage'));
 
 function App() {
   return (
     <>
-      <Header />
+      {/*  <Header />
       <Main />
-      <Footer />
+      <Footer /> */}
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="" element={<ProfilePage />} />
+          <Route path="" element={<ContactsPage />} />
+          <Route path="" element={<ServicesPage />} />
+          <Route path="" element={HelpPage} />
+        </Route>
+      </Routes>
     </>
   );
 }

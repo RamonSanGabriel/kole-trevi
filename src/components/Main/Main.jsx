@@ -17,7 +17,7 @@ const Main = () => {
             <div className="mainContent">
               <h2 className="aboutMe">About me</h2>
               <p>
-                <h4>Hi, I'm Trevi!</h4> ipsum dolor sit amet consectetur
+                <strong>Hi, I'm Trevi!</strong> ipsum dolor sit amet consectetur
                 adipisicing elit. Beatae, porro nulla, repellendus quod ullam
                 aperiam quo aspernatur vel sequi nisi, eum dolorem tempora neque
                 repudiandae eos exercitationem quasi dolores. Maiores
