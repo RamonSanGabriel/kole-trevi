@@ -1,8 +1,14 @@
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import Contacts from '../../components/Contacts/Contacts';
+
 const ContactsPage = () => {
   return (
-    <>
-      <h1>Contacts Page</h1>
-    </>
+    <HelmetProvider>
+      <Helmet>
+        <title>Contacts</title>
+      </Helmet>
+      <Contacts />
+    </HelmetProvider>
   );
 };
 

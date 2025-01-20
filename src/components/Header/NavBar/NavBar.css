@@ -1,16 +1,16 @@
 .navWrapper {
   max-width: 1024px;
   @media (width > 767px) {
-    justify-content: space-between;
+    justify-content: flex-end;
     display: flex;
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 }
 .navListContainer {
   display: flex;
 }
-.home,
+/* .home,
 .profile,
 .services,
 .contacts,
@@ -20,22 +20,18 @@
   @media (width > 767px) {
     display: block;
   }
-}
+} */
 .navList {
-  display: flex;
-  gap: 1rem;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-  /* margin-bottom: 5rem; */
+  display: none;
+  @media (width > 767px) {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.logo {
-  background-color: #e76f51;
-  width: 60px;
-  border-radius: 100px;
-  padding: 2px;
-  /* margin-top: 5px; */
-}
+
 .trevi-icon {
   width: 20px;
 }

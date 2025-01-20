@@ -5,12 +5,11 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main'; */
 import SharedLayout from './components/SharedLayout/SharedLayout';
-const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const ProfilePage = lazy(() => import('./pages/ProfilePage/ProfilePage'));
+const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage/ServicesPage'));
-
 const HelpPage = lazy(() => import('./pages/HelpPage/HelpPage'));
 
 function App() {
@@ -22,10 +21,10 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="profile" element={<ProfilePage />} />
-          <Route path="contacts" element={<ContactsPage />} />
-          <Route path="services" element={<ServicesPage />} />
-          <Route path="help" element={HelpPage} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/help" element={<HelpPage />} />
         </Route>
       </Routes>
     </>

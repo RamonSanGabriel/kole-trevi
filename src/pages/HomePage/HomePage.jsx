@@ -1,6 +1,5 @@
-import React from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import Main from '../../components/Main/Main';
+import Home from '../../components/Home/Home';
 
 const HomePage = () => {
   return (
@@ -8,7 +7,7 @@ const HomePage = () => {
       <Helmet>
         <title>Home</title>
       </Helmet>
-      <Main />
+      <Home />
     </HelmetProvider>
   );
 };

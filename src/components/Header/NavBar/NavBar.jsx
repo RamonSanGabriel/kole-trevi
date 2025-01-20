@@ -1,15 +1,15 @@
 import './NavBar.css';
-import logo from '../../../images/trevi.svg';
+import { navLinks } from '../../../data/nav-links';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    // <div>
-    <nav className="navWrapper">
+    /*  <nav className="navWrapper">
       <div className="navListContainer">
         <ul className="navList">
           <li>
             <a href="" className="navListLink">
-              {/* <p className="navListText logo">Logo</p> */}
+
               <img src={logo} alt="Logo" className="navListText logo" />
             </a>
           </li>
@@ -49,8 +49,21 @@ const NavBar = () => {
           </li>
         </ul>
       </div>
+    </nav> */
+
+    <nav className="navWrapper">
+      {/* <div className="navListContainer"> */}
+      <div className="navListContainer">
+        <ul className="navList">
+          {navLinks.map(({ id, link, path }) => (
+            <li key={id}>
+              <NavLink to={path}>{link}</NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
+      {/* </div> */}
     </nav>
-    // </div>
   );
 };
 

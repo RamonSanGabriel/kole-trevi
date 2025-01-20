@@ -1,10 +1,10 @@
 .mainWrapper {
 }
 .heroContainer {
-  /* background-color: #e2e2e2; */
   background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
   background: linear-gradient(rgba(46, 47, 66, 0.071), rgba(46, 47, 66, 0.943)),
     url('../../images/trev.png');
+  margin-bottom: 1rem;
 
   & img {
     display: flex;
@@ -26,9 +26,9 @@
 .mainContent {
   padding: 0 1rem;
 
-  p {
+  /*   p {
     text-indent: 25px;
-  }
+  } */
   strong {
     display: inline;
     color: var(--HIGHLIGHT-COLOR);
