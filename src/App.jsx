@@ -30,7 +30,7 @@ function App() {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
 
-          <Route path="category" element={<CategoryPage />}>
+          <Route path="/category" element={<CategoryPage />}>
             {/* <Route path="category" element={<Categories />} /> */}
             <Route path="toys" element={<Toys />} />
             <Route path="photos" element={<Photos />} />
@@ -39,10 +39,10 @@ function App() {
             <Route path="videos" element={<Videos />} />
           </Route>
 
-          <Route path="profile" element={<ProfilePage />} />
-          <Route path="contacts" element={<ContactsPage />} />
-          <Route path="services" element={<ServicesPage />} />
-          <Route path="help" element={<HelpPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/help" element={<HelpPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
