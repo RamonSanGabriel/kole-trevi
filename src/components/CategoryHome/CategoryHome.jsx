@@ -1,10 +1,8 @@
-import './Categories.css';
-import { Link } from 'react-router-dom';
+import './CategoryHome.css';
+import { categoryLinks } from '../../data/category-links';
 import { NavLink } from 'react-router-dom';
 
-import { categoryLinks } from '../../data/category-links';
-
-const Categories = () => {
+const CategoryHome = () => {
   return (
     <div className="categoryWrapper">
       <div className="categoryContainer">
@@ -14,7 +12,7 @@ const Categories = () => {
           <ul>
             {categoryLinks.map(({ id, link, path, icon: Icon }) => (
               <li key={id} className="categoryListItem">
-                <NavLink to={path}>
+                <NavLink to="category">
                   <button className="categoryBtn">
                     <Icon className="categoryIcons" />
                     <h3>{link}</h3>
@@ -30,4 +28,4 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+export default CategoryHome;

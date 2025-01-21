@@ -1,6 +1,7 @@
 import './Home.css';
 import trev from '../../images/trev1.png';
 import Categories from '../Categories/Categories';
+import CategoryHome from '../CategoryHome/CategoryHome';
 
 const Home = () => {
   return (
@@ -12,7 +13,8 @@ const Home = () => {
             <img className="heroImage" src={trev} alt="trevi image" />
           </div>
           <div className="mainContainer">
-            <Categories />
+            {/* <Categories /> */}
+            <CategoryHome />
 
             <div className="mainContent">
               <h2 className="aboutMe">About me</h2>

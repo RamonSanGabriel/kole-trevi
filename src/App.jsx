@@ -5,8 +5,13 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main'; */
 import SharedLayout from './components/SharedLayout/SharedLayout';
-import Categories from './components/Categories/Categories';
-// import Toys from './components/Home/Categories/Toys/Toys';
+// import Categories from './components/Categories/Categories';
+// import ToysPage from './pages/CategoryPage/ToysPage/ToysPage';
+import Toys from './components/Categories/Toys/Toys';
+import Photos from './components/Categories/Photos/Photos';
+import Events from './components/Categories/Events/Events';
+import Books from './components/Categories/Books/Books';
+import Videos from './components/Categories/Videos/Videos';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const CategoryPage = lazy(() => import('./pages/CategoryPage/CategoryPage'));
@@ -24,10 +29,16 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
+
           <Route path="category" element={<CategoryPage />}>
-            <Route path="books" element={<Categories />} />
-            {/* <Route path="toys" element={<Toys />} /> */}
+            {/* <Route path="category" element={<Categories />} /> */}
+            <Route path="toys" element={<Toys />} />
+            <Route path="photos" element={<Photos />} />
+            <Route path="events" element={<Events />} />
+            <Route path="books" element={<Books />} />
+            <Route path="videos" element={<Videos />} />
           </Route>
+
           <Route path="profile" element={<ProfilePage />} />
           <Route path="contacts" element={<ContactsPage />} />
           <Route path="services" element={<ServicesPage />} />

@@ -1,35 +1,45 @@
-import { FcAutomotive } from 'react-icons/fc';
+//prettier-ignore
+import { FcAutomotive,FcCompactCamera,FcFilmReel,FcReading,FcSportsMode } from 'react-icons/fc';
+/* import { FcAutomotive } from 'react-icons/fc';
+import { FcCompactCamera } from 'react-icons/fc';
+import { FcFilmReel } from 'react-icons/fc';
+import { FcReading } from 'react-icons/fc';
+import { FcSportsMode } from 'react-icons/fc'; */
 
 export const categoryLinks = [
   {
     id: 1,
-    category: 'toys',
+    category: 'Toys',
     link: 'Toys',
-    path: '/toys',
+    path: 'toys',
     icon: FcAutomotive,
   },
   {
     id: 2,
-    category: 'photos',
+    category: 'Photos',
     link: 'Photos',
-    path: '/photos',
+    path: 'photos',
+    icon: FcCompactCamera,
   },
   {
     id: 3,
-    category: 'events',
+    category: 'Events',
     link: 'Events',
-    path: '/events',
+    path: 'events',
+    icon: FcFilmReel,
   },
   {
     id: 4,
-    category: 'books',
+    category: 'Books',
     link: 'Books',
-    path: '/books',
+    path: 'books',
+    icon: FcReading,
   },
   {
     id: 5,
-    category: 'videos',
+    category: 'Videos',
     link: 'Videos',
-    path: '/videos',
+    path: 'videos',
+    icon: FcSportsMode,
   },
 ];

@@ -12,6 +12,7 @@ const CategoryPage = () => {
       </Helmet>
       <h1>Category Page</h1>
       <Categories />
+
       <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>

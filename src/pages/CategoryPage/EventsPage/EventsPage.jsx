@@ -1,14 +1,13 @@
 import React from 'react';
 
-const ToysPage = () => {
+const EventsPage = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Toys</title>
+        <title>Events</title>
       </Helmet>
-      <h1>Toys Page</h1>
     </HelmetProvider>
   );
 };
 
-export default ToysPage;
+export default EventsPage;
