@@ -1,11 +1,13 @@
 import './Categories.css';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { FcAutomotive } from 'react-icons/fc';
 import { FcCompactCamera } from 'react-icons/fc';
 import { FcFilmReel } from 'react-icons/fc';
 import { FcReading } from 'react-icons/fc';
 import { FcSportsMode } from 'react-icons/fc';
+import { categoryLinks } from '../../data/category-links';
 
 const Categories = () => {
   return (
@@ -14,7 +16,7 @@ const Categories = () => {
         {/* <h1>Category Page</h1> */}
         <hr />
         <form action="">
-          <ul>
+          {/*  <ul>
             <li className="categoryListItem">
               <Link to="/category">
                 <button className="categoryBtn">
@@ -59,6 +61,17 @@ const Categories = () => {
                 </button>
               </Link>
             </li>
+          </ul> */}
+
+          <ul>
+            {categoryLinks.map(({ id, category, link, path, icon }) => (
+              <li key={id} className="categoryListItem">
+                <NavLink to={path}>
+                  {categoryLinks.icon}
+                  {link}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </form>
         <hr />
