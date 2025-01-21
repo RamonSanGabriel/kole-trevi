@@ -30,6 +30,8 @@
 }
 .categoryContainer {
   padding-bottom: 0.8rem;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 /* .categoryListItem {

@@ -1,6 +1,6 @@
 import './Home.css';
 import trev from '../../images/trev1.png';
-import Categories from './Categories/Categories';
+import Categories from '../Categories/Categories';
 
 const Home = () => {
   return (

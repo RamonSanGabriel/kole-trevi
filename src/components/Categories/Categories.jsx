@@ -1,8 +1,5 @@
 import './Categories.css';
-import { MdToys } from 'react-icons/md';
-import { MdOutlineToys } from 'react-icons/md';
-import { GiClothes } from 'react-icons/gi';
-import { MdOutlineFoodBank } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 import { FcAutomotive } from 'react-icons/fc';
 import { FcCompactCamera } from 'react-icons/fc';
@@ -14,52 +11,53 @@ const Categories = () => {
   return (
     <div className="categoryWrapper">
       <div className="categoryContainer">
+        {/* <h1>Category Page</h1> */}
         <hr />
         <form action="">
           <ul>
             <li className="categoryListItem">
-              <a href="/">
+              <Link to="/category">
                 <button className="categoryBtn">
                   <FcAutomotive className="categoryIcons" />
                   <h3>Toys</h3>
                 </button>
-              </a>
+              </Link>
             </li>
 
             <li className="categoryListItem">
-              <a href="/">
+              <Link to="/category">
                 <button className="categoryBtn">
                   <FcCompactCamera className="categoryIcons" />
                   <h3>Photos</h3>
                 </button>
-              </a>
+              </Link>
             </li>
 
             <li className="categoryListItem">
-              <a href="">
+              <Link to="/category">
                 <button className="categoryBtn">
                   <FcSportsMode className="categoryIcons" />
                   <h3>Events</h3>
                 </button>
-              </a>
+              </Link>
             </li>
 
             <li className="categoryListItem">
-              <a href="">
+              <Link to="/category">
                 <button className="categoryBtn">
                   <FcReading className="categoryIcons" />
                   <h3>Books</h3>
                 </button>
-              </a>
+              </Link>
             </li>
 
             <li className="categoryListItem">
-              <a href="">
+              <Link to="/category">
                 <button className="categoryBtn">
                   <FcFilmReel className="categoryIcons" />
-                  <h3>Movies</h3>
+                  <h3>Videos</h3>
                 </button>
-              </a>
+              </Link>
             </li>
           </ul>
         </form>
