@@ -48,6 +48,8 @@ body {
   color: var(--PRIMARY);
   min-width: 320px;
   min-height: 100vh;
+  /*   margin: 0;
+  padding: 0; */
 }
 
 h1 {

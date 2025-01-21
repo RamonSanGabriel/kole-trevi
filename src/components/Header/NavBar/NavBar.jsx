@@ -1,6 +1,7 @@
 import './NavBar.css';
 import { navLinks } from '../../../data/nav-links';
 import { NavLink } from 'react-router-dom';
+import { TfiMenu } from 'react-icons/tfi';
 
 const NavBar = () => {
   return (
@@ -53,6 +54,7 @@ const NavBar = () => {
 
     <nav className="navWrapper">
       {/* <div className="navListContainer"> */}
+      <TfiMenu className="menuIcon" />
       <div className="navListContainer">
         <ul className="navList">
           {navLinks.map(({ id, link, path }) => (
