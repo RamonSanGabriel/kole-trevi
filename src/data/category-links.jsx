@@ -26,7 +26,7 @@ export const categoryLinks = [
     category: 'Events',
     link: 'Events',
     path: 'events',
-    icon: FcFilmReel,
+    icon: FcSportsMode,
   },
   {
     id: 4,
@@ -40,6 +40,6 @@ export const categoryLinks = [
     category: 'Videos',
     link: 'Videos',
     path: 'videos',
-    icon: FcSportsMode,
+    icon: FcFilmReel,
   },
 ];
