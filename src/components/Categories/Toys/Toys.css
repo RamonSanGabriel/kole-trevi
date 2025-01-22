@@ -21,6 +21,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
+  padding: 1rem;
 
   & li {
     /* border: 1px solid red; */
@@ -31,5 +32,6 @@
 
   @media (width > 767px) {
     grid-template-columns: repeat(3, 1fr);
+    padding: 0;
   }
 }
