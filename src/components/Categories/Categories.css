@@ -32,32 +32,13 @@
   padding-bottom: 0.8rem;
   max-width: 1024px;
   margin: 0 auto;
-}
 
-/* .categoryListItem {
-  & h3 {
-    color: var(--primary);
-    background-clip: text;
-    font-style: 700;
-    transition: all 250ms ease-in-out;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-      background: linear-gradient(
-        90deg,
-        red,
-        orange,
-        yellow,
-        green,
-        blue,
-        purple
-      );
-      transform: scale(1.1);
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-    }
+  & p {
+    text-align: left;
   }
+}
+/* .categoryDetails {
+  text-align: left;
 } */
 .categoryBtn {
   padding: 0.3em 0.6em;
