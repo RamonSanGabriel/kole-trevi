@@ -1,9 +1,15 @@
 import './Categories.css';
 import { NavLink } from 'react-router-dom';
-import { categoryLinks, categoryDetails } from '../../data/category-links';
+import {
+  categoryLinks,
+  categoryDetails,
+  categoryOptions,
+} from '../../data/category-links';
 
 const Categories = () => {
   const { title, message, description } = categoryDetails;
+  const { cname, cdescription } = categoryOptions;
+
   return (
     <>
       {/* <div className="categoryContainer"> */}
@@ -11,6 +17,16 @@ const Categories = () => {
         <h1>{title}</h1>
         <h6>{message}</h6>
         <p>{description}</p>
+      </div>
+      <div className="categoryOptions">
+        <ul>
+          {categoryOptions.map(({ id, cname, cdescription }) => (
+            <li key={id}>
+              <h4>{cname} : &nbsp;</h4>
+              <p>{cdescription}</p>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="categoryListContainer">
         <hr className="hr" />

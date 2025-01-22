@@ -1,16 +1,40 @@
 //prettier-ignore
 import { FcAutomotive,FcCompactCamera,FcFilmReel,FcReading,FcSportsMode } from 'react-icons/fc';
-/* import { FcAutomotive } from 'react-icons/fc';
-import { FcCompactCamera } from 'react-icons/fc';
-import { FcFilmReel } from 'react-icons/fc';
-import { FcReading } from 'react-icons/fc';
-import { FcSportsMode } from 'react-icons/fc'; */
+
 export const categoryDetails = {
   title: 'Category Page',
   message: '(Click the icons below to show details)',
-  description:
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa quisquam? Atque consequuntur quasi pariatur vero temporibus. Asperiores eveniet dicta quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt veritatis commodi recusandae quasi pariatur omnis totam optio cumque facere. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga commodi reprehenderit, qui tempora ex nesciunt blanditiis maxime a laborum rem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa quisquam? Atque consequuntur quasi pariatur vero temporibus. Asperiores eveniet dicta quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt veritatis commodi recusandae quasi pariatur omnis totam optio cumque facere. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga commodi reprehenderit, qui tempora ex nesciunt blanditiis maxime a laborum rem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa quisquam? Atque consequuntur quasi pariatur vero temporibus. Asperiores eveniet dicta quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt veritatis commodi recusandae quasi pariatur omnis totam optio cumque facere. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga commodi reprehenderit, qui tempora ex nesciunt blanditiis maxime a laborum rem.',
+  description: 'The below description is in chronological order.',
 };
+
+export const categoryOptions = [
+  {
+    id: 1,
+    cname: 'Toys',
+    cdescription: 'The first icon will show all the available toys.',
+  },
+  {
+    id: 2,
+    cname: 'Photos',
+    cdescription: 'The second icon will show all the available photos.',
+  },
+  {
+    id: 3,
+    cname: 'Event',
+    cdescription: 'The third icon will show all the available events.',
+  },
+  {
+    id: 4,
+    cname: 'Books',
+    cdescription: 'The fourth icon will show all the available books.',
+  },
+  {
+    id: 5,
+    cname: 'Videos',
+    cdescription: 'The fifth icon will show all the available videos.',
+  },
+];
+
 export const categoryLinks = [
   {
     id: 1,
