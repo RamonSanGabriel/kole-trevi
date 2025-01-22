@@ -2,10 +2,13 @@ import { photoDetails, photoList } from '../../../data/photos';
 import './Photos.css';
 
 const Photos = () => {
-  const { title } = photoDetails;
+  const { title, description } = photoDetails;
   return (
     <div className="photoWrapper">
-      <h2>{title}</h2>
+      <div className="photoDetails">
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
       <div className="photoContainer">
         <ul className="photoList">
           {photoList.map(({ id, name, description, image }) => (

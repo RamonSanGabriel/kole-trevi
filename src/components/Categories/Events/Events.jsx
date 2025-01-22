@@ -1,14 +1,25 @@
-import React from 'react';
+import './Events.css';
+import { eventDetails, eventList } from '../../../data/events';
 
 const Events = () => {
+  const { title, description } = eventDetails;
   return (
-    <div>
-      <h2>Event Category</h2>
-      <ul>
-        <li>Event 1</li>
-        <li>Event 2</li>
-        <li>Event 3</li>
-      </ul>
+    <div className="eventWrapper">
+      <div className="eventDetails">
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </div>
+      <div className="eventContainer">
+        <ul className="eventList">
+          {eventList.map(({ id, name, description, image }) => (
+            <li key={id}>
+              <h4>{name}</h4>
+              <img src={image} alt={description} />
+              <p>{description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,7 @@
 export const photoDetails = {
   title: 'Photo Category List',
+  description:
+    'List of all photo categories. List of all photo categories.List of all photo categories.List of all photo categories.List of all photo categories.List of all photo categories.List of all photo categories.List of all photo categories. ',
 };
 
 export const photoList = [

@@ -8,7 +8,7 @@ const Categories = () => {
   return (
     <div className="categoryWrapper">
       <div className="categoryContainer">
-        {/* <h1>Category Page</h1> */}
+        <h1>Category Page</h1>
         <hr />
         <form action="">
           <ul>

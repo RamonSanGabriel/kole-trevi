@@ -6,7 +6,6 @@ const ToysPage = () => {
       <Helmet>
         <title>Toys</title>
       </Helmet>
-      {/* <h1>Toys Page</h1> */}
     </HelmetProvider>
   );
 };

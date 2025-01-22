@@ -7,7 +7,6 @@ const PhotosPage = () => {
       <Helmet>
         <title>Photos</title>
       </Helmet>
-      {/* <Photos /> */}
     </HelmetProvider>
   );
 };
