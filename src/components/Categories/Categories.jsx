@@ -1,7 +1,5 @@
 import './Categories.css';
-import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-
 import { categoryLinks } from '../../data/category-links';
 
 const Categories = () => {
