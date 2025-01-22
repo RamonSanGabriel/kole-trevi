@@ -1,8 +1,9 @@
-.categoryWrapper {
+.categoryHomeWrapper {
   position: sticky;
   background-color: #fff;
   margin: 0 auto;
-  top: 48px;
+  top: 55px;
+  padding-bottom: 0.8rem;
 
   @media (width > 767px) {
     position: static;
@@ -18,7 +19,7 @@
   & ul {
     display: flex;
     font-size: 0.625rem;
-    padding: 0.5rem 0;
+    /* padding: 0.5rem 0; */
     justify-content: space-around;
   }
   & h3 {
@@ -28,42 +29,23 @@
     }
   }
 }
-.categoryContainer {
-  padding-bottom: 0.8rem;
+.categoryHomeContainer {
+  /* padding-bottom: 0.8rem; */
   max-width: 1024px;
   margin: 0 auto;
+
+  & form {
+    position: sticky;
+    top: 48px;
+  }
 }
 
-/* .categoryListItem {
-  & h3 {
-    color: var(--primary);
-    background-clip: text;
-    font-style: 700;
-    transition: all 250ms ease-in-out;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-      background: linear-gradient(
-        90deg,
-        red,
-        orange,
-        yellow,
-        green,
-        blue,
-        purple
-      );
-      transform: scale(1.1);
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-    }
-  }
-} */
-.categoryBtn {
-  padding: 0.3em 0.6em;
+.categoryHomeBtn {
+  /* padding: 0 0.3em; */
   color: var(--primary);
   background-clip: text;
   transition: all 250ms ease-out;
+  margin: 0.5rem 0;
 
   &:hover,
   &:focus {
@@ -82,7 +64,7 @@
     box-shadow: 1px 1px 4px #b7b5b5;
   }
 }
-.categoryIcons {
+.categoryHomeIcons {
   width: 40px;
   height: 40px;
 }

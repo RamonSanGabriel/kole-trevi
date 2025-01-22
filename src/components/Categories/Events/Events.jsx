@@ -13,9 +13,15 @@ const Events = () => {
         <ul className="eventList">
           {eventList.map(({ id, name, description, image }) => (
             <li key={id}>
-              <h4>{name}</h4>
+              <h4>
+                {name} &nbsp;
+                {id}
+              </h4>
               <img src={image} alt={description} />
-              <p>{description}</p>
+              <p>
+                {description}&nbsp;
+                {id}
+              </p>
             </li>
           ))}
         </ul>

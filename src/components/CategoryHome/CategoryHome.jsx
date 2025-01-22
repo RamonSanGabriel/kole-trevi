@@ -4,17 +4,17 @@ import { NavLink } from 'react-router-dom';
 
 const CategoryHome = () => {
   return (
-    <div className="categoryWrapper">
-      <div className="categoryContainer">
+    <div className="categoryHomeWrapper">
+      <div className="categoryHomeContainer">
         {/* <h1>Category Page</h1> */}
         <hr />
         <form action="">
           <ul>
             {categoryLinks.map(({ id, link, icon: Icon }) => (
-              <li key={id} className="categoryListItem">
+              <li key={id} className="categoryHomeListItem">
                 <NavLink to="category">
-                  <button className="categoryBtn">
-                    <Icon className="categoryIcons" />
+                  <button className="categoryHomeBtn">
+                    <Icon className="categoryHomeIcons" />
                     <h3>{link}</h3>
                   </button>
                 </NavLink>

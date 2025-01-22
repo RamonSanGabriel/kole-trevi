@@ -1,26 +1,18 @@
 import './Profile.css';
 import { categoryLinks } from '../../data/category-links';
 import { NavLink } from 'react-router-dom';
+import { profileDetails } from '../../data/profile';
 
 const Profile = () => {
+  const { title, message, description } = profileDetails;
   return (
     <div className="profileWrapper">
       <div className="profileContainer">
         {/* <div className="categoryDetails"> */}
-        <h1>Profile Page</h1>
-        <h6>(Click the icons below to show details)</h6>
+        <h1>{title}</h1>
+        <h6>{message}</h6>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-          nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa
-          quisquam? Atque consequuntur quasi pariatur vero temporibus.
-          Asperiores eveniet dicta quasi. Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Tenetur deserunt veritatis commodi
-          recusandae quasi pariatur omnis totam optio cumque facere. Lorem,
-          ipsum dolor sit amet consectetur adipisicing elit. Fuga commodi
-          reprehenderit, qui tempora ex nesciunt blanditiis maxime a laborum
-          rem.
-        </p>
+        <p>{description}</p>
         {/* </div> */}
         <hr />
         <form action="">
