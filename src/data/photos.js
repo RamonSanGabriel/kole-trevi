@@ -1,7 +1,7 @@
 export const photoDetails = {
   title: 'Photo Category List',
   description:
-    'List of all photo categories. List of all photo categories.List of all photo categories.List of all photo categories.List of all photo categories.List of all photo categories.List of all photo categories.List of all photo categories. ',
+    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa quisquam? Atque consequuntur quasi pariatur vero temporibus. Asperiores eveniet dicta quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt veritatis commodi recusandae quasi pariatur omnis totam optio cumque facere.  ',
 };
 
 export const photoList = [

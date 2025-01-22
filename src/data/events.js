@@ -1,7 +1,7 @@
 export const eventDetails = {
   title: 'Event Category List',
   description:
-    'List of all event categories. List of all event categories.List of all event categories.List of all event categories.List of all event categories.List of all event categories.List of all event categories.List of all event categories.List of all event categories.List of all event categories.',
+    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa quisquam? Atque consequuntur quasi pariatur vero temporibus. Asperiores eveniet dicta quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt veritatis commodi recusandae quasi pariatur omnis totam optio cumque facere. ',
 };
 
 export const eventList = [
