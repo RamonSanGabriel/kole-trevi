@@ -1,23 +1,26 @@
-import './NavBar.css';
-import { navLinks } from '../../../data/nav-links';
-import { NavLink } from 'react-router-dom';
-// import Menu from '../Menu/Menu';
+import { useRef, useState } from 'react';
+// import { TfiMenu } from 'react-icons/tfi';
+import css from './Menu.module.css';
 import { Squash as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useClickAway } from 'react-use';
 import { menuRoutes } from '../../../data/menu-routes';
-import { useRef, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
-const NavBar = () => {
+const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef(null);
 
   useClickAway(ref, () => setIsOpen(false));
+
   return (
-    <nav className="navWrapper">
-      {/* <TfiMenu className="menuIcon" /> */}
-      <button className="menuBtn">
-        <Hamburger className="menuIcon" isOpen={isOpen} setOpen={setIsOpen} />
+    <>
+      <button className={css.menuBtn}>
+        <Hamburger
+          className={css.menuIcon}
+          isOpen={isOpen}
+          setOpen={setIsOpen}
+        />
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -55,17 +58,8 @@ const NavBar = () => {
           )}
         </AnimatePresence>
       </button>
-      <div className="navListContainer">
-        <ul className="navList">
-          {navLinks.map(({ id, link, path }) => (
-            <li className="navListItem" key={id}>
-              <NavLink to={path}>{link}</NavLink>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </nav>
+    </>
   );
 };
 
-export default NavBar;
+export default Menu;
