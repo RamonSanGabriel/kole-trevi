@@ -50,7 +50,7 @@
 }
 
 .categoryBtn {
-  /* padding: 0 0.3em; */
+  padding: 0 0.3rem;
   color: var(--primary);
   background-clip: text;
   transition: all 250ms ease-out;
