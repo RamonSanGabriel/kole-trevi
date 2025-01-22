@@ -15,7 +15,7 @@ const Toys = () => {
               {/* <NavLink to=""></NavLink> */}
               <h4>{name}</h4>
               <img src={image} alt={name} />
-              <p>{price}</p> <p>{description}</p>
+              <p>{description}</p>
             </li>
           ))}
         </ul>
