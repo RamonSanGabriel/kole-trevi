@@ -1,0 +1,37 @@
+.photoWrapper {
+  & h2 {
+    margin-bottom: 1rem;
+  }
+
+  & li {
+    margin: 1rem 0;
+  }
+
+  @media (width > 767px) {
+    padding: 0 1rem;
+  }
+}
+
+.photoContainer {
+  max-width: 1024px;
+  margin: 0 auto;
+  /* padding: 1rem; */
+}
+.photoList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+
+  & li {
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    margin: 1rem;
+    box-shadow: 1px 1px 4px #b7b5b5;
+  }
+
+  @media (width > 767px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+}

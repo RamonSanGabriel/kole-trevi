@@ -1,6 +1,6 @@
 import React from 'react';
-import { toyLists, toyDetails } from '../../../data/toys';
-import { NavLink } from 'react-router-dom';
+import { toyList, toyDetails } from '../../../data/toys';
+// import { NavLink } from 'react-router-dom';
 import './Toys.css';
 
 const Toys = () => {
@@ -10,12 +10,16 @@ const Toys = () => {
       <h2>{title}</h2>
       <div className="toyContainer">
         <ul className="toyList">
-          {toyLists.map(({ id, name, price, description, image }) => (
+          {toyList.map(({ id, name, price, description, image }) => (
             <li key={id}>
               {/* <NavLink to=""></NavLink> */}
-              <h4>{name}</h4>
-              <img src={image} alt={name} />
-              <p>{description}</p>
+              <h4>
+                {name}&nbsp; {id}
+              </h4>
+              <img src={image} alt={description} />
+              <p>
+                {description}&nbsp;{id}
+              </p>
             </li>
           ))}
         </ul>
