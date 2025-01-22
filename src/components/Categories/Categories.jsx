@@ -8,6 +8,7 @@ const Categories = () => {
       <div className="categoryContainer">
         {/* <div className="categoryDetails"> */}
         <h1>Category Page</h1>
+        <h6>(Click the icons below to show details)</h6>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
           nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa

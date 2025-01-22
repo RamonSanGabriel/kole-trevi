@@ -8,6 +8,8 @@ const Profile = () => {
       <div className="profileContainer">
         {/* <div className="categoryDetails"> */}
         <h1>Profile Page</h1>
+        <h6>(Click the icons below to show details)</h6>
+
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
           nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa
