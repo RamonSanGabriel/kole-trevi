@@ -2,12 +2,12 @@
   position: sticky;
   background-color: #fff;
   margin: 0 auto;
-  top: 55px;
+  top: 80px;
   padding-bottom: 0.8rem;
 
   @media (width > 767px) {
-    position: static;
-    top: 0;
+    /*  position: static;
+    top: 0; */
 
     & ul {
       & li {
