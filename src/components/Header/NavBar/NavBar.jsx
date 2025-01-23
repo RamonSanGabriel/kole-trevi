@@ -45,7 +45,7 @@ const NavBar = () => {
                       onClick={() => setIsOpen((prev) => !prev)}
                     >
                       {/* {icon} */}
-                      {title}
+                      {/* {title} */}
                       {link}
                     </NavLink>
                   </motion.li>
@@ -55,7 +55,7 @@ const NavBar = () => {
           )}
         </AnimatePresence>
       </button>
-      <div className="navListContainer">
+      {/*      <div className="navListContainer">
         <ul className="navList">
           {navLinks.map(({ id, link, path }) => (
             <li className="navListItem" key={id}>
@@ -63,7 +63,7 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </nav>
   );
 };
