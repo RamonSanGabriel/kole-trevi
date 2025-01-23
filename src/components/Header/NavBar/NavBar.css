@@ -63,6 +63,9 @@
 .menuBtn {
   background-color: #fff;
   /* padding: 0.5rem; */
+  @media (width > 767px) {
+    display: none;
+  }
 }
 
 .menuIcon {
@@ -70,8 +73,4 @@
   height: 20px;
   /* background-color: #fff; */
   /* margin: 0.5rem; */
-
-  @media (width > 767px) {
-    display: none;
-  }
 }

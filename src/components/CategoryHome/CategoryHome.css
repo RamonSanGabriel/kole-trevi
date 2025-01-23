@@ -6,8 +6,7 @@
   padding-bottom: 0.8rem;
 
   @media (width > 767px) {
-    /*  position: static;
-    top: 0; */
+    top: 55px;
 
     & ul {
       & li {
