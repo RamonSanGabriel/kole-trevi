@@ -66,11 +66,9 @@
   @media (width > 767px) {
     display: none;
   }
-}
 
-.menuIcon {
-  width: 20px;
-  height: 20px;
-  /* background-color: #fff; */
-  /* margin: 0.5rem; */
+  .menuIcon {
+    width: 20px;
+    height: 20px;
+  }
 }
