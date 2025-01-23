@@ -6,25 +6,25 @@ import { IoPricetagsOutline } from 'react-icons/io5';
 export const menuRoutes = [
   {
     title: 'Home',
-    link: '/',
+    // link: '/',
     path: '/',
     icon: <BiHomeAlt2 />,
   },
   {
     title: 'Profile',
-    link: '/profile',
+    // link: '/profile',
     path: '/profile',
     icon: <FiSearch />,
   },
   {
     title: 'Category',
-    link: '/category',
+    // link: '/category',
     path: '/category',
     icon: <IoPricetagsOutline />,
   },
   {
     title: 'Contacts',
-    link: '/contacts',
+    // link: '/contacts',
     path: '/contacts',
     icon: <PiChatCircleBold />,
   },

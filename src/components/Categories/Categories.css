@@ -16,14 +16,14 @@
 }
 .categoryOptions {
   display: flex;
-
+  max-width: 1024px;
+  margin: 0 auto 1rem;
   & li {
     display: grid;
     grid-template-columns: repeat(1, 1fr 2fr);
     align-items: top;
     text-align: left;
     padding: 0 1rem;
-
     @media (width > 767px) {
       display: grid;
       grid-template-columns: repeat(2, 1fr 2fr);
