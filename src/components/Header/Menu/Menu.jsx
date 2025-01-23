@@ -18,7 +18,11 @@ const Menu = () => {
     <>
       <nav className="menuWrapper">
         <button className="menuBtn" onClick={() => setIsOpen((prev) => !prev)}>
-          <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
+          <Hamburger
+            className="hamburgerMenu"
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+          />
         </button>
         <div className="menuListContainer">
           <AnimatePresence>
@@ -34,6 +38,7 @@ const Menu = () => {
                 <ul className="menuList">
                   {menuRoutes.map(({ idx, title, path, icon }) => {
                     return (
+                      // <button onClick={() => setIsOpen((prev) => !prev)}>
                       <motion.li
                         initial={{ scale: 0, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
@@ -46,13 +51,14 @@ const Menu = () => {
                         key={title}
                         className="menuListItem"
                       >
-                        <NavLink to={path}>
+                        <NavLink to={path} onClick={() => setIsOpen(prev)}>
                           <span>
                             {title}
                             {icon}
                           </span>
                         </NavLink>
                       </motion.li>
+                      // </button>
                     );
                   })}
                 </ul>

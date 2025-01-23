@@ -1,6 +1,9 @@
 .menuBtn {
   background-color: #fff;
 }
+.hamburgerMenu {
+  color: var(--PRIMARY-COLOR);
+}
 .menuIcon {
   width: 20px;
   height: 20px;
@@ -30,6 +33,7 @@
   height: 100vh;
   width: 100vw;
   z-index: 200;
+  /* pointer-events: none; */
 
   @media (width > 767px) {
     position: static;
@@ -39,7 +43,7 @@
   background-color: #e76f51;
   padding: 2rem;
 
-  /* height: 50vh; */
+  height: 100vh;
   @media (width > 767px) {
     display: flex;
     gap: 1rem;
@@ -52,10 +56,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #fff;
   }
 }
 .menuListItem {
-  color: var(--primary);
   background-clip: text;
   transition: all 250ms ease-in-out;
   cursor: pointer;
@@ -63,8 +67,9 @@
   padding: 0.8rem;
   border-bottom: 1px solid;
   border-color: darkgray;
+
   &:hover {
-    background: linear-gradient(
+    /* background: linear-gradient(
       90deg,
       red,
       orange,
@@ -72,7 +77,9 @@
       green,
       blue,
       purple
-    );
+    ); */
+    background-color: #454ef1;
+    /* font-weight: 700; */
     transform: scale(1.1);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
