@@ -8,6 +8,7 @@
 .headerContainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 1rem;
   border-color: #e2e2ee;
