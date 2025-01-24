@@ -16,7 +16,8 @@
   --SECONDARY-COLOR: #f7f7f7;
   --HIGHLIGHT-COLOR: #575ff1;
   --LOADER-COLOR: #e85d04;
-  /* background-color: #242424; */
+  --LOADER-COLOR-LIGHT: #f48c06;
+  --LIGHT: #edf2f4;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

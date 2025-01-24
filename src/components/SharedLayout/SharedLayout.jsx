@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from '../Header/Header';
-
+import { BackTopBtn } from '../BackTopBtn/BackTopBtn';
 import Footer from '../Footer/Footer';
 import Loader from '../Loader/Loader';
 
@@ -11,6 +11,7 @@ const SharedLayout = () => {
       <Header />
       <Suspense fallback={<Loader />}>
         <Outlet />
+        <BackTopBtn />
       </Suspense>
       <Footer />
     </div>
