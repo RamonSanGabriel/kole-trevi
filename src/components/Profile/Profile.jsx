@@ -14,7 +14,7 @@ const Profile = () => {
 
         <p>{description}</p>
         {/* </div> */}
-        <hr />
+        {/*  <hr />
         <form action="">
           <ul>
             {categoryLinks.map(({ id, link, path, icon: Icon }) => (
@@ -29,7 +29,7 @@ const Profile = () => {
             ))}
           </ul>
         </form>
-        <hr />
+        <hr /> */}
       </div>
     </div>
   );

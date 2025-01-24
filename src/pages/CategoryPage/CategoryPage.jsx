@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import NavBar from '../../components/Header/NavBar/NavBar';
 import MenuDesk from '../../components/Header/MenuDesk/MenuDesk';
+import CategoryHome from '../../components/CategoryHome/CategoryHome';
 
 const CategoryPage = () => {
   return (
@@ -12,7 +13,8 @@ const CategoryPage = () => {
       <Helmet>
         <title>Category</title>
       </Helmet>
-      <Categories />
+      {/* <Categories /> */}
+      <CategoryHome />
       {/* <NavBar /> */}
       <Suspense fallback={<Loader />}>
         <Outlet />
