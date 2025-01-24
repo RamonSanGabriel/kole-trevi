@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-// import { TfiMenu } from 'react-icons/tfi';
 import './Menu.css';
 import { Squash as Hamburger } from 'hamburger-react';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -8,8 +7,7 @@ import { useClickAway } from 'react-use';
 import { NavLink } from 'react-router-dom';
 import { menuRoutes } from '../../../data/menu-routes';
 
-const Menu = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Menu = ({ isOpen, setIsOpen }) => {
   const ref = useRef(null);
 
   useClickAway(ref, () => setIsOpen(false));

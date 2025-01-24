@@ -5,6 +5,7 @@
   @media (width > 767px) {
     justify-content: flex-end;
     width: 100%;
+
     /* margin: 0 auto; */
   }
 }
@@ -12,20 +13,8 @@
 .navListContainer {
   display: flex;
 }
-/* .home,
-.profile,
-.services,
-.contacts,
-.help {
-  display: none;
 
-  @media (width > 767px) {
-    display: block;
-  }
-} */
 .navList {
-  /* display: none; */
-
   @media (width > 767px) {
     display: flex;
     gap: 1rem;
@@ -67,3 +56,8 @@
     -webkit-background-clip: text;
   }
 }
+
+/* export const desktopView {
+  @media (width > 767px) {
+  }
+} */

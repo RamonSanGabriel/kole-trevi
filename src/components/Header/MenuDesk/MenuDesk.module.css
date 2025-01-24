@@ -1,0 +1,50 @@
+.menuDeskListContainer {
+  /* display: none; */
+
+  @media (width > 767px) {
+    display: flex;
+  }
+}
+.menuDeskList {
+  display: none;
+  @media (width > 767px) {
+    display: flex;
+    gap: 1rem;
+    & span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      /* color: #fff; */
+    }
+  }
+}
+
+.menuDeskListItem {
+  background-clip: text;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.8rem;
+  border-color: darkgray;
+  color: #fff;
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      purple
+    );
+    /* background-color: #454ef1; */
+    /* font-weight: 700; */
+    transform: scale(1.1);
+    /* border-bottom: 1px solid; */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}

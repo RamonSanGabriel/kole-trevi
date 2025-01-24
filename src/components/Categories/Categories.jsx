@@ -9,7 +9,7 @@ import {
 const Categories = () => {
   const { title, message, description } = categoryDetails;
   const { cname, cdescription } = categoryOptions;
-
+  console.log(categoryOptions);
   return (
     <>
       {/* <div className="categoryContainer"> */}
