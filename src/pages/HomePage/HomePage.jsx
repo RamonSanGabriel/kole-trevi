@@ -1,5 +1,7 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Home from '../../components/Home/Home';
+import { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -8,6 +10,9 @@ const HomePage = () => {
         <title>Home</title>
       </Helmet>
       <Home />
+      <Suspense>
+        <Outlet />
+      </Suspense>
     </HelmetProvider>
   );
 };

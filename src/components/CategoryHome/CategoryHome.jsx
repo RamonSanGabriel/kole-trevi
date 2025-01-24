@@ -10,9 +10,9 @@ const CategoryHome = () => {
         <hr />
         <form action="">
           <ul>
-            {categoryLinks.map(({ id, link, icon: Icon }) => (
+            {categoryLinks.map(({ id, path, link, icon: Icon }) => (
               <li key={id} className="categoryHomeListItem">
-                <NavLink to="category">
+                <NavLink to={path}>
                   <button className="categoryHomeBtn">
                     <Icon className="categoryHomeIcons" />
                     <h3>{link}</h3>
