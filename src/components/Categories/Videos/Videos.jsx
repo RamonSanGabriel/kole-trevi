@@ -6,7 +6,7 @@ const Videos = () => {
   const { title, description } = videoDetails;
   return (
     <>
-      <CategoryHome />
+      {/* <CategoryHome /> */}
       <div className="videoWrapper">
         <div className="videoDetails">
           <h2>{title}</h2>

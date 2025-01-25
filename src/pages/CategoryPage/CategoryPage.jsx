@@ -13,8 +13,8 @@ const CategoryPage = () => {
       <Helmet>
         <title>Category</title>
       </Helmet>
-      {/* <Categories /> */}
-      <CategoryHome />
+      <Categories />
+      {/* <CategoryHome /> */}
       {/* <NavBar /> */}
       <Suspense fallback={<Loader />}>
         <Outlet />

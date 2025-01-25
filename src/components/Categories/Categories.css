@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding-bottom: 0.8rem 0;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 0 1rem;
 
   & h1 {
@@ -37,7 +37,7 @@
   max-width: 1024px;
   margin: 0 auto;
   position: sticky;
-  top: 80px;
+  top: 141px;
   background-color: #fff;
   padding-bottom: 0.8rem;
 

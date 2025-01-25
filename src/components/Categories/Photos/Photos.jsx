@@ -6,7 +6,7 @@ const Photos = () => {
   const { title, description } = photoDetails;
   return (
     <>
-      <CategoryHome />
+      {/* <CategoryHome /> */}
       <div className="photoWrapper">
         <div className="photoDetails">
           <h2>{title}</h2>

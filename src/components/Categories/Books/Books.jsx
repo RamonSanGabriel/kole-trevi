@@ -6,7 +6,7 @@ const Books = () => {
   const { title, description } = bookDetails;
   return (
     <>
-      <CategoryHome />
+      {/* <CategoryHome /> */}
       <div className="bookWrapper">
         <div className="bookDetails">
           <h2>{title}</h2>

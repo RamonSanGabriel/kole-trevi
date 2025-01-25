@@ -6,7 +6,7 @@ const Events = () => {
   const { title, description } = eventDetails;
   return (
     <>
-      <CategoryHome />
+      {/* <CategoryHome /> */}
       <div className="eventWrapper">
         <div className="eventDetails">
           <h2>{title}</h2>

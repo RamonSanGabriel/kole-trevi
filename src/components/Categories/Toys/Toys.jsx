@@ -8,7 +8,7 @@ const Toys = () => {
   const { title, description } = toyDetails;
   return (
     <>
-      <CategoryHome />
+      {/* <CategoryHome /> */}
       <div className="toyWrapper">
         <div className="toyDetails">
           <h2>{title}</h2>
