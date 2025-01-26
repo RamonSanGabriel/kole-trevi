@@ -21,21 +21,4 @@ export const navLinks = [
     link: 'Contacts',
     path: '/contacts',
   },
-  /*  {
-    id: 5,
-    link: 'Services',
-    path: '/services',
-  }, */
-
-  /*   {
-    id: 6,
-    link: 'Help',
-    path: '/help',
-  }, */
-
-  /*   {
-    id: 7,
-    link: 'Toys',
-    path: '/toys',
-  }, */
 ];

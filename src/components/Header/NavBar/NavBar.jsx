@@ -11,24 +11,6 @@ const NavBar = () => {
     <nav className="navWrapper">
       <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
       <MenuDesk />
-      {/* <Categories /> */}
-
-      {/*  <ul className="menuList">
-        {menuRoutes.map(({ idx, title, path, icon }) => {
-          return (
-            // <button onClick={() => setIsOpen((prev) => !prev)}>
-            <li key={title} className="menuListItem">
-              <NavLink to={path} onClick={() => setIsOpen(prev)}>
-                <span>
-                  {title}
-                  {icon}
-                </span>
-              </NavLink>
-            </li>
-            // </button>
-          );
-        })}
-      </ul> */}
     </nav>
   );
 };

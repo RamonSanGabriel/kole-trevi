@@ -1,13 +1,8 @@
 .profileWrapper {
-  /* position: sticky; */
   background-color: #fff;
   margin: 0 auto;
-  /* top: 48px; */
 
   @media (width > 767px) {
-    /* position: static; */
-    /* top: 0; */
-
     & ul {
       & li {
         text-align: center;
@@ -43,9 +38,6 @@
     margin: 1rem auto;
   }
 }
-/* .categoryDetails {
-  text-align: left;
-} */
 .profileBtn {
   padding: 0.3em 0.6em;
   color: var(--primary);
@@ -64,7 +56,6 @@
       blue,
       purple
     );
-    /* -webkit-text-fill-color: transparent; */
     -webkit-background-clip: text;
     box-shadow: 1px 1px 4px #b7b5b5;
   }

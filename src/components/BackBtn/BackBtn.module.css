@@ -1,20 +1,21 @@
-.backBtnWrapper {
-  background-color: #fff;
-  /* border: 1px solid red; */
-  position: sticky;
-  width: 100vw;
+.backBtn {
+  position: fixed;
   z-index: 20;
-  top: 80px;
-  display: flex;
-  max-width: 1024px;
-  margin: 0 auto;
+  top: 170px;
+  left: 1rem;
+  background-color: var(--LOADER-COLOR);
+  color: var(--LIGHT);
+  border-radius: 5px;
+  padding: 0.5rem;
+  opacity: 0.7;
 
-  & button {
-    margin: 1rem 1rem 0.5rem;
-    background-color: var(--LOADER-COLOR);
-    right: 1rem;
-    color: var(--LIGHT);
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
+  @media (width > 767px) {
+    display: flex;
+    top: 160px;
+    left: 13.5rem;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }

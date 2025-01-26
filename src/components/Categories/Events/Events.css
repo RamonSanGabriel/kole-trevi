@@ -1,14 +1,13 @@
 .eventWrapper {
+  @media (width > 767px) {
+    padding: 0 1rem;
+  }
   & h2 {
     margin-bottom: 1rem;
   }
 
   & li {
     margin: 1rem 0;
-  }
-
-  @media (width > 767px) {
-    padding: 0 1rem;
   }
 }
 .eventDetails {
@@ -28,14 +27,12 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  /* padding: 2rem; */
 
   @media (width > 767px) {
     grid-template-columns: repeat(3, 1fr);
   }
 
   & li {
-    /* border: 1px solid red; */
     border-radius: 5px;
     margin: 1rem;
     box-shadow: 1px 1px 4px #b7b5b5;

@@ -1,5 +1,4 @@
 import React from 'react';
-// import { navLinks } from '../../../data/nav-links';
 import { NavLink } from 'react-router-dom';
 import css from './MenuDesk.module.css';
 import { menuRoutes } from '../../../data/menu-routes';

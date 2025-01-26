@@ -1,23 +1,21 @@
 import './Categories.css';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import {
   categoryLinks,
   categoryDetails,
   categoryOptions,
 } from '../../data/category-links';
-import BackBtn from '../BackBtn/BackBtn';
 
 const Categories = () => {
   const { title, message, description } = categoryDetails;
   const { cname, cdescription } = categoryOptions;
-  console.log(categoryOptions);
-  const location = useLocation();
-  const backBtn = location.state?.from ?? '/';
+
   return (
     <>
       <div className="categoryDetails">
         <h1>{title}</h1>
         <h6>{message}</h6>
+
         <p>{description}</p>
       </div>
       <div className="categoryOptions">
@@ -30,6 +28,7 @@ const Categories = () => {
           ))}
         </ul>
       </div>
+
       <div className="categoryListContainer">
         <hr className="hr" />
         <form action="">
@@ -48,9 +47,6 @@ const Categories = () => {
         </form>
         <hr className="hr" />
       </div>
-      <Link to={backBtn}>
-        <BackBtn text="⬅ Go back" />
-      </Link>
     </>
   );
 };

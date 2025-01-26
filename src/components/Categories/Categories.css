@@ -37,13 +37,13 @@
   max-width: 1024px;
   margin: 0 auto;
   position: sticky;
-  top: 141px;
+  top: 80px;
   background-color: #fff;
   padding-bottom: 0.8rem;
 
   @media (width > 767px) {
     padding-bottom: 1rem;
-    top: 55px;
+    /* top: 55px; */
   }
 
   & ul {
@@ -95,4 +95,7 @@
 .categoryIcons {
   width: 40px;
   height: 40px;
+}
+.backBtnLink {
+  display: inline-flex;
 }

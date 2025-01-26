@@ -26,10 +26,7 @@
 .mainContent {
   padding: 0 1rem;
 
-  /*   p {
-    text-indent: 25px;
-  } */
-  strong {
+  & strong {
     display: inline;
     color: var(--HIGHLIGHT-COLOR);
   }
@@ -40,7 +37,6 @@
   @media (width > 767px) {
     & h2 {
       padding: 1rem;
-      /* padding-b: 1rem; */
     }
   }
 }

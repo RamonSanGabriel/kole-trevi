@@ -6,8 +6,6 @@
   padding-bottom: 0.8rem;
 
   @media (width > 767px) {
-    /* top: 55px; */
-
     & ul {
       & li {
         text-align: center;
@@ -18,18 +16,15 @@
   & ul {
     display: flex;
     font-size: 0.625rem;
-    /* padding: 0.5rem 0; */
     justify-content: space-around;
   }
   & h3 {
-    /* display: none; */
     @media (width > 767px) {
       display: block;
     }
   }
 }
 .categoryHomeContainer {
-  /* padding-bottom: 0.8rem; */
   max-width: 1024px;
   margin: 0 auto;
 

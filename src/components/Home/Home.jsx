@@ -1,6 +1,5 @@
 import './Home.css';
 import trev from '../../images/trev1.png';
-// import Categories from '../Categories/Categories';
 import CategoryHome from '../CategoryHome/CategoryHome';
 
 const Home = () => {
@@ -9,11 +8,9 @@ const Home = () => {
       <main>
         <div className="mainWrapper">
           <div className="heroContainer">
-            {/* <h1>Kole Trevi App coming soon...</h1> */}
             <img className="heroImage" src={trev} alt="trevi image" />
           </div>
           <div className="mainContainer">
-            {/* <Categories /> */}
             <CategoryHome />
 
             <div className="mainContent">
