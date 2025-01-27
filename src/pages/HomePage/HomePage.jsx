@@ -2,6 +2,8 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Home from '../../components/Home/Home';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
+import Loader from '../../components/Loader/Loader';
+import CategoryHome from '../../components/CategoryHome/CategoryHome';
 
 const HomePage = () => {
   return (
@@ -10,7 +12,8 @@ const HomePage = () => {
         <title>Home</title>
       </Helmet>
       <Home />
-      <Suspense>
+      <Suspense fallback={<Loader />}>
+        <CategoryHome />
         <Outlet />
       </Suspense>
     </HelmetProvider>

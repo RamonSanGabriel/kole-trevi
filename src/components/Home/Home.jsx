@@ -4,7 +4,7 @@ import CategoryHome from '../CategoryHome/CategoryHome';
 import { homeAbout } from '../../data/home';
 
 const Home = () => {
-  const { tittle, description } = homeAbout;
+  const { description } = homeAbout;
   return (
     <>
       <main>
@@ -13,7 +13,7 @@ const Home = () => {
             <img className="heroImage" src={trev} alt="trevi image" />
           </div>
           <div className="mainContainer">
-            <CategoryHome />
+            {/* <CategoryHome /> */}
 
             <div className="mainContent">
               <h2 className="aboutMe">About me</h2>

@@ -1,12 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import css from './BackBtn.module.css';
-import { Link, useLocation } from 'react-router-dom';
+import { animateScroll as scroll } from 'react-scroll';
 
-const BackBtn = ({ show, setShow }) => {
-  const location = useLocation();
-  const backBtn = location.state?.from ?? '/';
-  console.log(backBtn);
-
+const BackBtn = () => {
+  const [show, setShow] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       setShow(window.scrollY > 600);
@@ -17,11 +14,9 @@ const BackBtn = ({ show, setShow }) => {
 
   return (
     show && (
-      <Link to={backBtn}>
-        <button className={css.backBtn} type="button">
-          ⬅ Go back
-        </button>
-      </Link>
+      <button className={css.backBtn} type="button" text="  ⬅ Go back">
+        ⬅ Go back
+      </button>
     )
   );
 };
