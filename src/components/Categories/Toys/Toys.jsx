@@ -1,10 +1,10 @@
-import React from 'react';
 import { toyList, toyDetails } from '../../../data/toys';
 import './Toys.css';
 import { NavLink } from 'react-router-dom';
 
 const Toys = () => {
   const { title, description } = toyDetails;
+  // const imageHandler = new Lightbox();
   return (
     <>
       <div className="toyWrapper">
@@ -19,9 +19,13 @@ const Toys = () => {
                 <h4>
                   {name}&nbsp; {id}
                 </h4>
-                <NavLink to={href}>
-                  <img src={image} alt={description} />
-                </NavLink>
+                <div className="toyImage">
+                  <NavLink to={href}>
+                    {/* <Lightbox> */}
+                    <img src={image} alt={description} />
+                    {/* </Lightbox> */}
+                  </NavLink>
+                </div>
                 <p>
                   {description}&nbsp;{id}
                 </p>

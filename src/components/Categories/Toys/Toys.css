@@ -1,14 +1,13 @@
 .toyWrapper {
+  @media (width > 767px) {
+    padding: 0 1rem;
+  }
   & h2 {
     margin-bottom: 1rem;
   }
 
   & li {
     margin: 1rem 0;
-  }
-
-  @media (width > 767px) {
-    padding: 0 1rem;
   }
 }
 .toyDetails {
@@ -27,6 +26,7 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
   @media (width > 767px) {
     grid-template-columns: repeat(3, 1fr);
@@ -38,8 +38,17 @@
     box-shadow: 1px 1px 4px #b7b5b5;
 
     & img {
-      width: 300px;
+      width: 100%;
       object-fit: contain;
+      transition: all 250ms linear;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
+}
+.toyImage {
+  width: 100%;
+  overflow: hidden;
 }

@@ -8,7 +8,7 @@ import {
 
 const Categories = () => {
   const { title, message, description } = categoryDetails;
-  const { cname, cdescription } = categoryOptions;
+  // const { cname, cdescription } = categoryOptions;
 
   return (
     <>

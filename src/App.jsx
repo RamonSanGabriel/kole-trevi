@@ -1,21 +1,15 @@
 import './App.css';
 import { lazy } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-/* import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main'; */
 import SharedLayout from './components/SharedLayout/SharedLayout';
-// import Categories from './components/Categories/Categories';
-// import ToysPage from './pages/CategoryPage/ToysPage/ToysPage';
 import Toys from './components/Categories/Toys/Toys';
 import Photos from './components/Categories/Photos/Photos';
 import Events from './components/Categories/Events/Events';
 import Books from './components/Categories/Books/Books';
 import Videos from './components/Categories/Videos/Videos';
-import CategoryPage from './pages/CategoryPage/CategoryPage';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
-// const CategoryPage = lazy(() => import('./pages/CategoryPage/CategoryPage'));
+const CategoryPage = lazy(() => import('./pages/CategoryPage/CategoryPage'));
 const ProfilePage = lazy(() => import('./pages/ProfilePage/ProfilePage'));
 const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage/ServicesPage'));

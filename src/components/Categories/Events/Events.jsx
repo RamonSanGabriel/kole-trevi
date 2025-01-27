@@ -22,9 +22,11 @@ const Events = () => {
                   {name} &nbsp;
                   {id}
                 </h4>
-                <NavLink to={href}>
-                  <img src={image} alt={description} />
-                </NavLink>
+                <div className="eventImage">
+                  <NavLink to={href}>
+                    <img src={image} alt={description} />
+                  </NavLink>
+                </div>
                 <p>
                   {description}&nbsp;
                   {id}

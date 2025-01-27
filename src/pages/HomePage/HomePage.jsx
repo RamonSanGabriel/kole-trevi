@@ -12,8 +12,8 @@ const HomePage = () => {
         <title>Home</title>
       </Helmet>
       <Home />
+      <CategoryHome />
       <Suspense fallback={<Loader />}>
-        <CategoryHome />
         <Outlet />
       </Suspense>
     </HelmetProvider>

@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import Categories from '../../components/Categories/Categories';
 import Loader from '../../components/Loader/Loader';
 import { Outlet } from 'react-router-dom';
