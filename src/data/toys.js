@@ -16,8 +16,8 @@ export const toyList = [
     name: 'Toy',
     price: 10.99,
     description: 'This is toy',
-    image: toy6,
-    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/Toys/Toy6.png',
+    image: toy1,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/Toys/Toy1.png',
   },
   {
     id: 2,

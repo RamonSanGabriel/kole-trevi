@@ -2,7 +2,6 @@ import './Events.css';
 import { eventDetails, eventList } from '../../../data/events';
 import CategoryHome from '../../CategoryHome/CategoryHome';
 import { NavLink } from 'react-router-dom';
-// import eventImage1 from '../../../images/EventImages/EventCooking1.png';
 
 const Events = () => {
   const { title, description } = eventDetails;
