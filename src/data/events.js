@@ -1,3 +1,4 @@
+// export const eventImage1 = '../images/EventImages/EventCooking1.png';
 export const eventDetails = {
   title: 'Event Category List',
   description:
@@ -10,7 +11,7 @@ export const eventList = [
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: { eventImage1: '../images/EventImages/EventCooking1.png' },
   },
   {
     id: 2,
@@ -60,6 +61,7 @@ export const eventList = [
     price: 10.99,
     description: 'This is event',
     image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    // image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
   },
   {
     id: 9,
