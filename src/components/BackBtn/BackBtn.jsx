@@ -6,7 +6,7 @@ const BackBtn = () => {
   const [show, setShow] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      setShow(window.scrollY > 500);
+      setShow(window.scrollY > 600);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
