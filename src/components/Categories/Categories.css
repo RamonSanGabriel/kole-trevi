@@ -26,7 +26,7 @@
   font-size: 0.75rem;
   & li {
     display: grid;
-    grid-template-columns: repeat(1, 1fr 2fr);
+    grid-template-columns: repeat(1, 1fr 3fr);
     align-items: top;
     text-align: left;
     padding: 0 1rem;
