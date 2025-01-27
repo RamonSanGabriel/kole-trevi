@@ -1,5 +1,5 @@
-import { photoDetails, photoList } from '../../../data/photos';
-import CategoryHome from '../../CategoryHome/CategoryHome';
+import { photoDetails, photoList } from '../../../data/photos.js';
+// import CategoryHome from '../../CategoryHome/CategoryHome';
 import './Photos.css';
 
 const Photos = () => {
