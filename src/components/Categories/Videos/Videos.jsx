@@ -20,6 +20,7 @@ const Videos = () => {
                 <h4>
                   {name}&nbsp; {id}
                 </h4>
+                {/* add NavLink */}
                 <img src={image} alt={description} />
                 <p>
                   {description}&nbsp;{id}

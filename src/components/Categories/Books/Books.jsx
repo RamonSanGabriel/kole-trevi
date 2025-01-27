@@ -1,6 +1,6 @@
 import './Books.css';
 import { bookDetails, bookList } from '../../../data/book';
-import CategoryHome from '../../CategoryHome/CategoryHome';
+// import CategoryHome from '../../CategoryHome/CategoryHome';
 
 const Books = () => {
   const { title, description } = bookDetails;
@@ -20,6 +20,7 @@ const Books = () => {
                 <h4>
                   {name}&nbsp; {id}
                 </h4>
+                {/* add NavLink */}
                 <img src={image} alt={description} />
                 <p>
                   {description}&nbsp;{id}

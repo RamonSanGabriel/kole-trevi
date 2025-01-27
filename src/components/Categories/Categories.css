@@ -47,6 +47,7 @@
   top: 80px;
   background-color: #fff;
   padding-bottom: 0.8rem;
+  z-index: 5;
 
   @media (width > 767px) {
     padding-bottom: 1rem;

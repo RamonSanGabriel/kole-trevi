@@ -23,7 +23,7 @@ const Events = () => {
                   {id}
                 </h4>
                 <div className="eventImage">
-                  <NavLink to={href}>
+                  <NavLink>
                     <img src={image} alt={description} />
                   </NavLink>
                 </div>

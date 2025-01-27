@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { photoDetails, photoList } from '../../../data/photos.js';
 // import CategoryHome from '../../CategoryHome/CategoryHome';
 import './Photos.css';
@@ -20,7 +21,11 @@ const Photos = () => {
                   {name} &nbsp;
                   {id}
                 </h4>
-                <img src={image} alt={description} />
+                <div className="photoImage">
+                  <NavLink>
+                    <img src={image} alt={description} />
+                  </NavLink>
+                </div>
                 <p>
                   {description} &nbsp;
                   {id}

@@ -20,10 +20,8 @@ const Toys = () => {
                   {name}&nbsp; {id}
                 </h4>
                 <div className="toyImage">
-                  <NavLink to={href}>
-                    {/* <Lightbox> */}
+                  <NavLink>
                     <img src={image} alt={description} />
-                    {/* </Lightbox> */}
                   </NavLink>
                 </div>
                 <p>

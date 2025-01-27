@@ -39,6 +39,16 @@
 
     & img {
       width: 100%;
+      object-fit: contain;
+      transition: all 250ms linear;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
+}
+.photoImage {
+  width: 100%;
+  overflow: hidden;
 }
