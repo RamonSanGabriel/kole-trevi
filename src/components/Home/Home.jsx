@@ -4,7 +4,7 @@ import CategoryHome from '../CategoryHome/CategoryHome';
 import { homeAbout } from '../../data/home';
 
 const Home = () => {
-  const { description } = homeAbout;
+  const { description, greeting } = homeAbout;
   return (
     <>
       <main>
@@ -17,7 +17,10 @@ const Home = () => {
 
             <div className="mainContent">
               <h2 className="aboutMe">About me</h2>
-              <p>{description}</p>
+              <p>
+                <strong>{greeting}&nbsp;</strong>
+                {description}
+              </p>
             </div>
           </div>
         </div>
