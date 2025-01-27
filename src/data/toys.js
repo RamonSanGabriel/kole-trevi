@@ -67,25 +67,4 @@ export const toyList = [
     description: 'This is toy',
     image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
   },
-  {
-    id: 10,
-    name: 'Toy',
-    price: 10.99,
-    description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 11,
-    name: 'Toy',
-    price: 10.99,
-    description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 12,
-    name: 'Toy',
-    price: 10.99,
-    description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
 ];

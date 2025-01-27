@@ -1,11 +1,12 @@
 import './Events.css';
 import { eventDetails, eventList } from '../../../data/events';
 import CategoryHome from '../../CategoryHome/CategoryHome';
-import eventImage1 from '../../../images/EventImages/EventCooking1.png';
+import { NavLink } from 'react-router-dom';
+// import eventImage1 from '../../../images/EventImages/EventCooking1.png';
 
 const Events = () => {
   const { title, description } = eventDetails;
-  const { imgName } = eventList;
+  // const { imgName } = eventList;
   return (
     <>
       {/* <CategoryHome /> */}
@@ -16,13 +17,15 @@ const Events = () => {
         </div>
         <div className="eventContainer">
           <ul className="eventList">
-            {eventList.map(({ id, name, description, image, imgName }) => (
+            {eventList.map(({ id, name, description, image, href, src }) => (
               <li key={id}>
                 <h4>
                   {name} &nbsp;
                   {id}
                 </h4>
-                <img src={imgName} alt={description} />
+                <NavLink to={href}>
+                  <img src={image} alt={description} />
+                </NavLink>
                 <p>
                   {description}&nbsp;
                   {id}

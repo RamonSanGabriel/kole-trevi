@@ -1,4 +1,8 @@
-// export const eventImage1 = '../images/EventImages/EventCooking1.png';
+import event1 from '../images/EventImages/EventCooking1.png';
+import event2 from '../images/EventImages/EventCooking2.png';
+import event3 from '../images/EventImages/EventCooking3.png';
+import event4 from '../images/EventImages/EventCooking4.png';
+import event5 from '../images/EventImages/EventCooking5.png';
 export const eventDetails = {
   title: 'Event Category List',
   description:
@@ -11,84 +15,71 @@ export const eventList = [
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: { eventImage1: '../images/EventImages/EventCooking1.png' },
+    image: event1,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking1.png',
   },
   {
     id: 2,
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: event2,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking2.png',
   },
   {
     id: 3,
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: event3,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking3.png',
   },
   {
     id: 4,
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: event4,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking4.png',
   },
   {
     id: 5,
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: event5,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking5.png',
   },
   {
     id: 6,
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: event1,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking1.png',
   },
   {
     id: 7,
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: event2,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking2.png',
   },
   {
     id: 8,
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-    // image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: event3,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking3.png',
   },
   {
     id: 9,
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 10,
-    name: 'Event',
-    price: 10.99,
-    description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 11,
-    name: 'Event',
-    price: 10.99,
-    description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 12,
-    name: 'Event',
-    price: 10.99,
-    description: 'This is event',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: event4,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking4.png',
   },
 ];

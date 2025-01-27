@@ -59,22 +59,4 @@ export const photoList = [
     description: 'This is photo',
     image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
   },
-  {
-    id: 10,
-    name: 'Photo ',
-    description: 'This is photo ',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 11,
-    name: 'Photo',
-    description: 'This is photo',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 12,
-    name: 'Photo',
-    description: 'This is photo',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
 ];

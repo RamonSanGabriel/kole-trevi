@@ -67,25 +67,4 @@ export const videoList = [
     description: 'This is video',
     image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
   },
-  {
-    id: 10,
-    name: 'Video',
-    price: 10.99,
-    description: 'This is video',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 11,
-    name: 'Video',
-    price: 10.99,
-    description: 'This is video',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 12,
-    name: 'Video',
-    price: 10.99,
-    description: 'This is video',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
 ];

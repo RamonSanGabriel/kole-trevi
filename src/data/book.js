@@ -68,25 +68,4 @@ export const bookList = [
     description: 'This is book',
     image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
   },
-  {
-    id: 10,
-    name: 'Book',
-    price: 10.99,
-    description: 'This is book',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 11,
-    name: 'Book',
-    price: 10.99,
-    description: 'This is book',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 12,
-    name: 'Book',
-    price: 10.99,
-    description: 'This is book',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
 ];
