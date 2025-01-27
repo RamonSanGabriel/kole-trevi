@@ -11,8 +11,9 @@
 
   @media (width > 767px) {
     display: flex;
-    top: 161px;
-    left: 13.5rem;
+    /* top: 160px; */
+    top: 90px;
+    /* left: 13.5rem; */
   }
 
   &:hover {
