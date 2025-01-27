@@ -1,3 +1,10 @@
+import toy1 from '../images/Toys/Toy1.png';
+import toy2 from '../images/Toys/Toy2.png';
+import toy3 from '../images/Toys/Toy3.png';
+import toy4 from '../images/Toys/Toy4.png';
+import toy5 from '../images/Toys/Toy5.png';
+import toy6 from '../images/Toys/Toy6.png';
+
 export const toyDetails = {
   title: 'Toy Category List',
   description:
@@ -9,62 +16,47 @@ export const toyList = [
     name: 'Toy',
     price: 10.99,
     description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: toy6,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/Toys/Toy6.png',
   },
   {
     id: 2,
     name: 'Toy',
     price: 10.99,
     description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: toy2,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/Toys/Toy2.png',
   },
   {
     id: 3,
     name: 'Toy',
     price: 10.99,
     description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: toy3,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/Toys/Toy3.png',
   },
   {
     id: 4,
     name: 'Toy',
     price: 10.99,
     description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: toy4,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/Toys/Toy4.png',
   },
   {
     id: 5,
     name: 'Toy',
     price: 10.99,
     description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: toy5,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/Toys/Toy5.png',
   },
   {
     id: 6,
     name: 'Toy',
     price: 10.99,
     description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 7,
-    name: 'Toy',
-    price: 10.99,
-    description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 8,
-    name: 'Toy',
-    price: 10.99,
-    description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
-  },
-  {
-    id: 9,
-    name: 'Toy',
-    price: 10.99,
-    description: 'This is toy',
-    image: 'https://fakeimg.pl/300x200?text=No+Image+Available',
+    image: toy6,
+    href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/Toys/Toy6.png',
   },
 ];
