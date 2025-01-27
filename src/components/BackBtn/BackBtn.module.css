@@ -11,8 +11,8 @@
 
   @media (width > 767px) {
     display: flex;
-    /* top: 160px; */
-    top: 90px;
+    top: 160px;
+    /* top: 90px; */
     /* left: 13.5rem; */
   }
 
