@@ -6,7 +6,7 @@ import { useState } from 'react';
 import Footer from '../Footer/Footer';
 import Loader from '../Loader/Loader';
 import { BackTopBtn } from '../BackTopBtn/BackTopBtn';
-import BackBtn from '../BackBtn/BackBtn';
+// import BackBtn from '../BackBtn/BackBtn';
 
 const SharedLayout = () => {
   const [show, setShow] = useState(false);
@@ -15,7 +15,7 @@ const SharedLayout = () => {
       <Header />
       <Suspense fallback={<Loader />}>
         <Outlet />
-        <BackBtn show={show} setShow={setShow} />
+        {/* <BackBtn show={show} setShow={setShow} /> */}
         <BackTopBtn show={show} setShow={setShow} />
       </Suspense>
       <Footer />

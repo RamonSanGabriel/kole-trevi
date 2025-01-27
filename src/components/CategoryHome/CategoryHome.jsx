@@ -1,12 +1,11 @@
 import './CategoryHome.css';
-import { categoryLinks, categoryOptions } from '../../data/category-links';
+import { categoryLinks } from '../../data/category-links';
 import { NavLink } from 'react-router-dom';
 
 const CategoryHome = () => {
   return (
     <div className="categoryHomeWrapper">
       <div className="categoryHomeContainer">
-        {/* <h1>Category Page</h1> */}
         <hr />
         <form action="">
           <ul>
