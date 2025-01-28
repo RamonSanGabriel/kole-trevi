@@ -21,11 +21,11 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="toys" element={<Toys />} />
+          {/*  <Route path="toys" element={<Toys />} />
           <Route path="photos" element={<Photos />} />
           <Route path="events" element={<Events />} />
           <Route path="books" element={<Books />} />
-          <Route path="videos" element={<Videos />} />
+          <Route path="videos" element={<Videos />} /> */}
           <Route path="category" element={<CategoryPage />}>
             <Route path="toys" element={<Toys />} />
             <Route path="photos" element={<Photos />} />
