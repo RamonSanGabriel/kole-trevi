@@ -1,6 +1,5 @@
 import './Events.css';
 import { eventDetails, eventList } from '../../../data/events';
-import CategoryHome from '../../CategoryHome/CategoryHome';
 import { NavLink } from 'react-router-dom';
 
 const Events = () => {
@@ -8,7 +7,6 @@ const Events = () => {
   // const { imgName } = eventList;
   return (
     <>
-      {/* <CategoryHome /> */}
       <div className="eventWrapper">
         <div className="eventDetails">
           <h2>{title}</h2>

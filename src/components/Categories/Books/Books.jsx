@@ -1,8 +1,7 @@
 import './Books.css';
-import { bookDetails, bookList } from '../../../data/book';
-import { NavLink } from 'react-router-dom';
-import Lightbox from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
+import { bookDetails, bookList } from '../../../data/book.js';
+// import { NavLink } from 'react-router-dom';
+// import Lightbox from 'yet-another-react-lightbox';
 import { useState } from 'react';
 
 const Books = () => {
@@ -18,17 +17,18 @@ const Books = () => {
           <p>{description}</p>
         </div>
         <div className="bookContainer">
-          <ul className="bookList">
+          <ul className="bookList" onClick={() => setOpen(true)}>
             {bookList.map(({ id, name, price, description, src }) => (
               <li key={id} onClick={() => setOpen(true)}>
-                {/* <NavLink to=""></NavLink> */}
                 <h4>
                   {name}&nbsp;{id}
                 </h4>
                 <div className="bookImage">
-                  <NavLink to={src} target="_blank">
-                    <img src={src} alt={description} />
-                  </NavLink>
+                  {/* <button > */}
+                  {/* <NavLink to={src} target="_blank"> */}
+                  <img src={src} alt={description} />
+                  {/* </NavLink> */}
+                  {/* </button> */}
                 </div>
                 <p>
                   {description}&nbsp;{id}

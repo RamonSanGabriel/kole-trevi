@@ -5,10 +5,6 @@ import { Outlet } from 'react-router-dom';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BackBtn from '../../components/BackBtn/BackBtn';
 import { Link, useLocation } from 'react-router-dom';
-import Photos from '../../components/Categories/Photos/Photos';
-import Toys from '../../components/Categories/Toys/Toys';
-import Events from '../../components/Categories/Events/Events';
-import Books from '../../components/Categories/Books/Books';
 
 const CategoryPage = () => {
   const location = useLocation();
@@ -24,10 +20,6 @@ const CategoryPage = () => {
         <Link to={backBtn}>
           <BackBtn />
         </Link>
-        {/* <Toys />
-        <Photos />
-        <Events />
-        <Books /> */}
         <Outlet />
       </Suspense>
     </HelmetProvider>

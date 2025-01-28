@@ -1,6 +1,5 @@
 import './Videos.css';
 import { videoDetails, videoList } from '../../../data/videos';
-import CategoryHome from '../../CategoryHome/CategoryHome';
 
 const Videos = () => {
   const { title, description } = videoDetails;

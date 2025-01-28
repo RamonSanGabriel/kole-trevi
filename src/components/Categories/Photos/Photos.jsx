@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { photoDetails, photoList } from '../../../data/photos.js';
-// import CategoryHome from '../../CategoryHome/CategoryHome';
 import './Photos.css';
+import { Suspense } from 'react';
 
 const Photos = () => {
   const { title, description } = photoDetails;
@@ -16,21 +16,23 @@ const Photos = () => {
         <div className="photoContainer">
           <ul className="photoList">
             {photoList.map(({ id, name, description, image }) => (
-              <li key={id}>
-                <h4>
-                  {name} &nbsp;
-                  {id}
-                </h4>
-                <div className="photoImage">
-                  <NavLink>
-                    <img src={image} alt={description} />
-                  </NavLink>
-                </div>
-                <p>
-                  {description} &nbsp;
-                  {id}
-                </p>
-              </li>
+              <Suspense>
+                <li key={id}>
+                  <h4>
+                    {name} &nbsp;
+                    {id}
+                  </h4>
+                  <div className="photoImage">
+                    <NavLink>
+                      <img src={image} alt={description} />
+                    </NavLink>
+                  </div>
+                  <p>
+                    {description} &nbsp;
+                    {id}
+                  </p>
+                </li>
+              </Suspense>
             ))}
           </ul>
         </div>

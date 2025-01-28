@@ -2,11 +2,11 @@ import './App.css';
 import { lazy } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import SharedLayout from './components/SharedLayout/SharedLayout';
-import Toys from './components/Categories/Toys/Toys';
-import Photos from './components/Categories/Photos/Photos';
-import Events from './components/Categories/Events/Events';
-import Books from './components/Categories/Books/Books';
-import Videos from './components/Categories/Videos/Videos';
+const Toys = lazy(() => import('./components/Categories/Toys/Toys'));
+const Photos = lazy(() => import('./components/Categories/Photos/Photos'));
+const Events = lazy(() => import('./components/Categories/Events/Events'));
+const Books = lazy(() => import('./components/Categories/Books/Books'));
+const Videos = lazy(() => import('./components/Categories/Videos/Videos'));
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const CategoryPage = lazy(() => import('./pages/CategoryPage/CategoryPage'));
