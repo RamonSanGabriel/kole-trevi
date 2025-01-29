@@ -1,5 +1,5 @@
 import './CategoryHome.css';
-import { categoryLinks } from '../../data/category-links';
+import { categoryHomeLinks } from '../../data/category-links';
 import { NavLink } from 'react-router-dom';
 
 const CategoryHome = () => {
@@ -9,7 +9,7 @@ const CategoryHome = () => {
         <hr />
         <form action="">
           <ul>
-            {categoryLinks.map(({ id, path, link, icon: Icon }) => (
+            {categoryHomeLinks.map(({ id, path, link, icon: Icon }) => (
               <li key={id} className="categoryHomeListItem">
                 <NavLink to={path}>
                   <button className="categoryHomeBtn">

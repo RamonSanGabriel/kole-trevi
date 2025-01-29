@@ -5,10 +5,11 @@ import {
   categoryDetails,
   categoryOptions,
 } from '../../data/category-links';
+import { useState } from 'react';
 
 const Categories = () => {
+  const [show, setShow] = useState(false);
   const { title, message, description } = categoryDetails;
-  // const { cname, cdescription } = categoryOptions;
 
   return (
     <>
@@ -36,7 +37,7 @@ const Categories = () => {
             {categoryLinks.map(({ id, link, path, icon: Icon }) => (
               <li key={id} className="categoryListItem">
                 <NavLink to={path}>
-                  <button className="categoryBtn">
+                  <button onClick={() => setShow(true)} className="categoryBtn">
                     <Icon className="categoryIcons" />
                     <h3>{link}</h3>
                   </button>

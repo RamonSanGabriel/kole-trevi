@@ -13,6 +13,7 @@ const HomePage = () => {
       </Helmet>
       <Home />
       <CategoryHome />
+
       <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>

@@ -1,10 +1,11 @@
+import { lazy } from 'react';
 import { toyList, toyDetails } from '../../../data/toys';
 import './Toys.css';
 import { NavLink } from 'react-router-dom';
 
 const Toys = () => {
   const { title, description } = toyDetails;
-  // const imageHandler = new Lightbox();
+
   return (
     <>
       <div className="toyWrapper">
@@ -14,14 +15,14 @@ const Toys = () => {
         </div>
         <div className="toyContainer">
           <ul className="toyList">
-            {toyList.map(({ id, name, description, image, href }) => (
+            {toyList.map(({ id, name, description, image }) => (
               <li key={id}>
                 <h4>
                   {name}&nbsp; {id}
                 </h4>
                 <div className="toyImage">
                   <NavLink>
-                    <img src={image} alt={description} />
+                    <img src={image} alt={description} loading="lazy" />
                   </NavLink>
                 </div>
                 <p>
