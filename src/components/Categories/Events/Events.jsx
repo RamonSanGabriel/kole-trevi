@@ -1,29 +1,37 @@
-import './Events.css';
+import css from './Events.module.css';
 import { eventDetails, eventList } from '../../../data/events';
-import { NavLink } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Events = () => {
   const { title, description } = eventDetails;
   // const { imgName } = eventList;
   return (
     <>
-      <div className="eventWrapper">
-        <div className="eventDetails">
+      <div className={css.eventWrapper}>
+        <div className={css.eventDetails}>
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
-        <div className="eventContainer">
-          <ul className="eventList">
-            {eventList.map(({ id, name, description, image, href, src }) => (
+        <div className={css.eventContainer}>
+          <ul className={css.eventList}>
+            {eventList.map(({ id, name, description, image, placeholder }) => (
               <li key={id}>
                 <h4>
                   {name} &nbsp;
                   {id}
                 </h4>
-                <div className="eventImage">
-                  <NavLink>
-                    <img src={image} alt={description} />
-                  </NavLink>
+                <div className={css.eventImage}>
+                  <div className={css.lazyLoadContainer}>
+                    <LazyLoadImage
+                      className={css.lazyLoad}
+                      key={id}
+                      effect="blur"
+                      src={image}
+                      alt={`toy image ${id}`}
+                      placeholderSrc={placeholder}
+                    />
+                  </div>
                 </div>
                 <p>
                   {description}&nbsp;
