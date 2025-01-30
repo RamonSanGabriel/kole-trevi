@@ -28,7 +28,7 @@ const Events = () => {
                       key={id}
                       effect="blur"
                       src={image}
-                      alt={`toy image ${id}`}
+                      alt={`event image ${id}`}
                       placeholderSrc={placeholder}
                     />
                   </div>
