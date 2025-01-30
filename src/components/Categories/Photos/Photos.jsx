@@ -31,7 +31,7 @@ const Photos = () => {
                       key={id}
                       effect="blur"
                       src={image}
-                      alt={`toy image ${id}`}
+                      alt={`photo image ${id}`}
                       placeholderSrc={placeholder}
                     />
                   </div>
