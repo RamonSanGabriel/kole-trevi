@@ -25,8 +25,10 @@ const Toys = () => {
                     <LazyLoadImage
                       className={css.lazyLoad}
                       key={id}
-                      effect="blur"
                       src={image}
+                      // srcSet={`${image} 400w`}
+
+                      effect="blur"
                       alt={`toy image ${id}`}
                       placeholderSrc={placeholder}
                     />
@@ -45,3 +47,4 @@ const Toys = () => {
 };
 
 export default Toys;
+// srcSet={`${image}1600x800 1600w`}

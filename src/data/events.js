@@ -11,12 +11,12 @@ import event5small from '../images/EventImages/Event5-small.png';
 import event6 from '../images/EventImages/Event6.png';
 import event6small from '../images/EventImages/Event6-small.png';
 
-import event13 from '../images/EventImages/Event13.png';
-import event13small from '../images/EventImages/Event13-small.png';
-import event14 from '../images/EventImages/Event14.png';
-import event14small from '../images/EventImages/Event14-small.png';
-import event16 from '../images/EventImages/event16.png';
-import event16small from '../images/EventImages/Event16-small.png';
+import event7 from '../images/EventImages/Event7.png';
+import event7small from '../images/EventImages/Event7-small.png';
+import event8 from '../images/EventImages/Event8.png';
+import event8small from '../images/EventImages/Event8-small.png';
+import event9 from '../images/EventImages/Event9.png';
+import event9small from '../images/EventImages/Event9-small.png';
 
 export const eventDetails = {
   title: 'Event Category List',
@@ -75,8 +75,8 @@ export const eventList = [
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: event16,
-    placeholder: event16small,
+    image: event6,
+    placeholder: event6small,
     href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking6.png',
   },
   {
@@ -84,8 +84,8 @@ export const eventList = [
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: event6,
-    placeholder: event6small,
+    image: event7,
+    placeholder: event7small,
     href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking6.png',
   },
   {
@@ -93,8 +93,8 @@ export const eventList = [
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: event13,
-    placeholder: event13small,
+    image: event8,
+    placeholder: event8small,
     href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking6.png',
   },
   {
@@ -102,8 +102,8 @@ export const eventList = [
     name: 'Event',
     price: 10.99,
     description: 'This is event',
-    image: event14,
-    placeholder: event14small,
+    image: event9,
+    placeholder: event9small,
     href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/EventImages/EventCooking6.png',
   },
 ];
