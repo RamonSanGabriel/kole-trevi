@@ -15,11 +15,12 @@ const CategoryPage = () => {
       <Helmet>
         <title>Category</title>
       </Helmet>
+      <Categories />
+
+      <Link to={backBtn}>
+        <BackBtn />
+      </Link>
       <Suspense fallback={<Loader />}>
-        <Categories />
-        <Link to={backBtn}>
-          <BackBtn />
-        </Link>
         <Outlet />
       </Suspense>
     </HelmetProvider>

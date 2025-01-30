@@ -1,9 +1,15 @@
 import toy1 from '../images/ToysImages/Toy1.png';
+import toy1small from '../images/ToysImages/Toy1-small.png';
 import toy2 from '../images/ToysImages/Toy2.png';
+import toy2small from '../images/ToysImages/Toy2-small.png';
 import toy3 from '../images/ToysImages/Toy3.png';
+import toy3small from '../images/ToysImages/Toy3-small.png';
 import toy4 from '../images/ToysImages/Toy4.png';
+import toy4small from '../images/ToysImages/Toy4-small.png';
 import toy5 from '../images/ToysImages/Toy5.png';
+import toy5small from '../images/ToysImages/Toy5-small.png';
 import toy6 from '../images/ToysImages/Toy6.png';
+import toy6small from '../images/ToysImages/Toy6-small.png';
 
 export const toyDetails = {
   title: 'Toy Category List',
@@ -17,6 +23,7 @@ export const toyList = [
     price: 10.99,
     description: 'This is toy',
     image: toy1,
+    placeholder: toy1small,
     href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/ToysImages/Toy1.png',
   },
   {
@@ -25,6 +32,7 @@ export const toyList = [
     price: 10.99,
     description: 'This is toy',
     image: toy2,
+    placeholder: toy2small,
     href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/ToysImages/Toy2.png',
   },
   {
@@ -33,6 +41,7 @@ export const toyList = [
     price: 10.99,
     description: 'This is toy',
     image: toy3,
+    placeholder: toy3small,
     href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/ToysImages/Toy3.png',
   },
   {
@@ -41,6 +50,7 @@ export const toyList = [
     price: 10.99,
     description: 'This is toy',
     image: toy4,
+    placeholder: toy4small,
     href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/ToysImages/Toy4.png',
   },
   {
@@ -49,6 +59,7 @@ export const toyList = [
     price: 10.99,
     description: 'This is toy',
     image: toy5,
+    placeholder: toy5small,
     href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/ToysImages/Toy5.png',
   },
   {
@@ -57,6 +68,7 @@ export const toyList = [
     price: 10.99,
     description: 'This is toy',
     image: toy6,
+    placeholder: toy6small,
     href: 'https://github.com/RamonSanGabriel/kole-trevi/blob/main/src/images/ToysImages/Toy6.png',
   },
 ];

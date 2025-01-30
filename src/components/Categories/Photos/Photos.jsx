@@ -24,7 +24,7 @@ const Photos = () => {
                   </h4>
                   <div className="photoImage">
                     <NavLink>
-                      <img src={image} alt={description} />
+                      <img src={image} alt={description} loading="lazy" />
                     </NavLink>
                   </div>
                   <p>
