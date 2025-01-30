@@ -1,38 +1,50 @@
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import { photoDetails, photoList } from '../../../data/photos.js';
-import './Photos.css';
-import { Suspense } from 'react';
+import css from './Photos.module.css';
+// import { Suspense } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Photos = () => {
   const { title, description } = photoDetails;
   return (
     <>
       {/* <CategoryHome /> */}
-      <div className="photoWrapper">
-        <div className="photoDetails">
+      <div className={css.photoWrapper}>
+        <div className={css.photoDetails}>
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
-        <div className="photoContainer">
-          <ul className="photoList">
-            {photoList.map(({ id, name, description, image }) => (
-              <Suspense>
-                <li key={id}>
-                  <h4>
-                    {name} &nbsp;
-                    {id}
-                  </h4>
-                  <div className="photoImage">
-                    <NavLink>
-                      <img src={image} alt={description} loading="lazy" />
-                    </NavLink>
+        <div className={css.photoContainer}>
+          <ul className={css.photoList}>
+            {photoList.map(({ id, name, description, image, placeholder }) => (
+              // <Suspense>
+              <li key={id}>
+                <h4>
+                  {name} &nbsp;
+                  {id}
+                </h4>
+                <div className={css.photoImage}>
+                  <div className={css.lazyLoadContainer}>
+                    <LazyLoadImage
+                      className={css.lazyLoad}
+                      key={id}
+                      effect="blur"
+                      src={image}
+                      alt={`toy image ${id}`}
+                      placeholderSrc={placeholder}
+                    />
                   </div>
-                  <p>
-                    {description} &nbsp;
-                    {id}
-                  </p>
-                </li>
-              </Suspense>
+                  {/* <NavLink>
+                      <img src={image} alt={description} loading="lazy" />
+                    </NavLink> */}
+                </div>
+                <p>
+                  {description} &nbsp;
+                  {id}
+                </p>
+              </li>
+              // </Suspense>
             ))}
           </ul>
         </div>
