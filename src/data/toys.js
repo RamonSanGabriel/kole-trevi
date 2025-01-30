@@ -1,15 +1,15 @@
-import toy1 from '../images/ToysImages/Toy1.png';
-import toy1small from '../images/ToysImages/Toy1-small.png';
-import toy2 from '../images/ToysImages/Toy2.png';
-import toy2small from '../images/ToysImages/Toy2-small.png';
-import toy3 from '../images/ToysImages/Toy3.png';
-import toy3small from '../images/ToysImages/Toy3-small.png';
-import toy4 from '../images/ToysImages/Toy4.png';
-import toy4small from '../images/ToysImages/Toy4-small.png';
-import toy5 from '../images/ToysImages/Toy5.png';
-import toy5small from '../images/ToysImages/Toy5-small.png';
-import toy6 from '../images/ToysImages/Toy6.png';
-import toy6small from '../images/ToysImages/Toy6-small.png';
+import toy1 from '../images/ToysImages/Toy1.jpg';
+import toy1small from '../images/ToysImages/Toy1-small.jpg';
+import toy2 from '../images/ToysImages/Toy2.jpg';
+import toy2small from '../images/ToysImages/Toy2-small.jpg';
+import toy3 from '../images/ToysImages/Toy3.jpg';
+import toy3small from '../images/ToysImages/Toy3-small.jpg';
+import toy4 from '../images/ToysImages/Toy4.jpg';
+import toy4small from '../images/ToysImages/Toy4-small.jpg';
+import toy5 from '../images/ToysImages/Toy5.jpg';
+import toy5small from '../images/ToysImages/Toy5-small.jpg';
+import toy6 from '../images/ToysImages/Toy6.jpg';
+import toy6small from '../images/ToysImages/Toy6-small.jpg';
 
 export const toyDetails = {
   title: 'Toy Category List',
