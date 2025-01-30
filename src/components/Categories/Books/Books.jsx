@@ -1,7 +1,7 @@
-import './Books.css';
+import css from './Books.module.css';
 import { bookDetails, bookList } from '../../../data/book.js';
-// import { NavLink } from 'react-router-dom';
-// import Lightbox from 'yet-another-react-lightbox';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { useState } from 'react';
 
 const Books = () => {
@@ -11,24 +11,29 @@ const Books = () => {
   return (
     <>
       {/* <CategoryHome /> */}
-      <div className="bookWrapper">
-        <div className="bookDetails">
+      <div className={css.bookWrapper}>
+        <div className={css.bookDetails}>
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
-        <div className="bookContainer">
-          <ul className="bookList" onClick={() => setOpen(true)}>
-            {bookList.map(({ id, name, price, description, src }) => (
+        <div className={css.bookContainer}>
+          <ul className={css.bookList} onClick={() => setOpen(true)}>
+            {bookList.map(({ id, name, description, image, placeholder }) => (
               <li key={id} onClick={() => setOpen(true)}>
                 <h4>
                   {name}&nbsp;{id}
                 </h4>
-                <div className="bookImage">
-                  {/* <button > */}
-                  {/* <NavLink to={src} target="_blank"> */}
-                  <img src={src} alt={description} />
-                  {/* </NavLink> */}
-                  {/* </button> */}
+                <div className={css.bookImage}>
+                  <div className={css.lazyLoadContainer}>
+                    <LazyLoadImage
+                      className={css.lazyLoad}
+                      key={id}
+                      effect="blur"
+                      src={image}
+                      alt={`toy image ${id}`}
+                      placeholderSrc={placeholder}
+                    />
+                  </div>
                 </div>
                 <p>
                   {description}&nbsp;{id}
