@@ -64,3 +64,43 @@
   width: 40px;
   height: 40px;
 }
+.lazyLoadContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #b7b5b5;
+
+  /* transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
+  &:hover {
+    transform: scale(1.1);
+  } */
+}
+.lazyLoad {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 5px;
+  cursor: pointer;
+
+  /* transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
+  &:hover {
+    transform: scale(1.1);
+  } */
+
+  @media (width > 767px) {
+    width: 300px;
+  }
+}
+
+.profileImage {
+  width: 100%;
+  overflow: hidden;
+}
