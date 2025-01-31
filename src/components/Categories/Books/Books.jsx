@@ -2,12 +2,16 @@ import css from './Books.module.css';
 import { bookDetails, bookList } from '../../../data/book.js';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Books = () => {
   const [open, setOpen] = useState(false);
 
   const { title, description } = bookDetails;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {/* <CategoryHome /> */}

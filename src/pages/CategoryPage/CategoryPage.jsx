@@ -6,10 +6,13 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BackBtn from '../../components/BackBtn/BackBtn';
 import { Link, useLocation } from 'react-router-dom';
 
+
 const CategoryPage = () => {
   const location = useLocation();
   const backBtn = location.state?.from ?? '/';
   console.log(location);
+
+
   return (
     <HelmetProvider>
       <Helmet>

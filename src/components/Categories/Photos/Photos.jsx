@@ -4,9 +4,14 @@ import css from './Photos.module.css';
 // import { Suspense } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { useEffect } from 'react';
 
 const Photos = () => {
   const { title, description } = photoDetails;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {/* <CategoryHome /> */}

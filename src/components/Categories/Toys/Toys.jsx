@@ -2,9 +2,13 @@ import { toyList, toyDetails } from '../../../data/toys';
 import css from './Toys.module.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { useEffect } from 'react';
 
 const Toys = () => {
   const { title, description } = toyDetails;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

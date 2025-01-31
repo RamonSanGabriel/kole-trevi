@@ -2,10 +2,14 @@ import css from './Events.module.css';
 import { eventDetails, eventList } from '../../../data/events';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { useEffect } from 'react';
 
 const Events = () => {
   const { title, description } = eventDetails;
-  // const { imgName } = eventList;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className={css.eventWrapper}>

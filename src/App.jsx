@@ -2,6 +2,7 @@ import './App.css';
 import { lazy } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import SharedLayout from './components/SharedLayout/SharedLayout';
+
 const Toys = lazy(() => import('./components/Categories/Toys/Toys'));
 const Photos = lazy(() => import('./components/Categories/Photos/Photos'));
 const Events = lazy(() => import('./components/Categories/Events/Events'));

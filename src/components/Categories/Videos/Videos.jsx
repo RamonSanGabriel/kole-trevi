@@ -1,8 +1,13 @@
 import './Videos.css';
 import { videoDetails, videoList } from '../../../data/videos';
+import { useEffect } from 'react';
 
 const Videos = () => {
   const { title, description } = videoDetails;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {/* <CategoryHome /> */}
