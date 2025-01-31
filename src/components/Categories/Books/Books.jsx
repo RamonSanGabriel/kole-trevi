@@ -34,7 +34,7 @@ const Books = () => {
                       key={id}
                       effect="blur"
                       src={image}
-                      alt={`toy image ${id}`}
+                      alt={`book image ${id}`}
                       placeholderSrc={placeholder}
                     />
                   </div>
