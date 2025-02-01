@@ -16,12 +16,12 @@ export const menuRoutes = [
     path: '/profile',
     icon: <FiSearch />,
   },
-  /*  {
+  {
     id: 3,
     title: 'Category',
     path: '/category',
     icon: <IoPricetagsOutline />,
-  }, */
+  },
   {
     id: 4,
     title: 'Contacts',
