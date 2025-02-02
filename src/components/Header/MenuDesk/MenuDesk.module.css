@@ -41,3 +41,8 @@
     -webkit-background-clip: text;
   }
 }
+
+.menuLinkActive {
+  /* composes: menuDeskListItem; */
+  color: var(--HIGHLIGHT-COLOR);
+}

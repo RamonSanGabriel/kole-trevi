@@ -16,14 +16,16 @@
     padding: 0.5rem 0;
     justify-content: space-around;
   }
-  & h3 {
+  /* & h3 {
     display: none;
+
     @media (width > 767px) {
       display: block;
     }
-  }
+  } */
 }
 .profileContainer {
+  /* display: flex; */
   padding-bottom: 0.8rem;
   max-width: 1024px;
   margin: 0 auto;
@@ -37,8 +39,12 @@
     text-align: justify;
     margin: 1rem auto;
   }
+
+  & h6 {
+    margin: 0.5rem auto 1rem;
+  }
 }
-.profileBtn {
+/* .profileBtn {
   padding: 0.3em 0.6em;
   color: var(--primary);
   background-clip: text;
@@ -59,16 +65,20 @@
     -webkit-background-clip: text;
     box-shadow: 1px 1px 4px #b7b5b5;
   }
-}
+} */
 .profileIcons {
   width: 40px;
   height: 40px;
 }
 .lazyLoadContainer {
   display: flex;
-  align-items: center;
+  /* flex-direction: column; */
   border-radius: 5px;
-  box-shadow: 1px 1px 4px #b7b5b5;
+
+  @media (width > 767px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .lazyLoad {
   width: 100%;
@@ -83,6 +93,32 @@
 }
 
 .profileImage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  overflow: hidden;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #b7b5b5;
+
+  & p {
+    text-align: left;
+  }
+}
+
+.detailsContainer {
+  display: grid;
+  align-items: center;
+  justify-content: left;
+  padding: 0 1rem;
+  font-size: 0.75rem;
+
+  @media (width > 767px) {
+    margin: 0 2rem;
+    gap: 10px;
+    font-size: 1rem;
+  }
+
+  & p {
+    margin: 0;
+  }
 }

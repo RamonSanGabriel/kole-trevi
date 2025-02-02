@@ -64,7 +64,7 @@
     }
   }
   & h3 {
-    display: none;
+    /* display: none; */
 
     @media (width < 767px) {
       display: block;
@@ -76,8 +76,8 @@
   margin: 0 auto;
 }
 
-.categoryBtn {
-  padding: 0 0.3rem;
+.categoryLink {
+  /* padding: 0 0.3rem; */
   color: var(--primary);
   background-clip: text;
   transition: all 250ms ease-out;
@@ -97,8 +97,14 @@
     );
     -webkit-text-fill-color: var(--primary);
     -webkit-background-clip: text;
-    box-shadow: 1px 1px 4px #b7b5b5;
+    /* box-shadow: 1px 1px 4px #b7b5b5; */
   }
+}
+
+.categoryLinkActive {
+  composes: categoryLink;
+  color: var(--HIGHLIGHT-COLOR);
+  text-decoration: none;
 }
 .categoryIcons {
   width: 40px;

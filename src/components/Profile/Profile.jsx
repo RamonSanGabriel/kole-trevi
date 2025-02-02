@@ -1,11 +1,13 @@
 import css from './Profile.module.css';
-import { profileDetails } from '../../data/profile';
+import { profileDetails, details } from '../../data/profile';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Profile = () => {
   const { id, title, message, description, image, placeholder } =
     profileDetails;
+
+  const { name, dob, length, kg, time, birthplace } = details;
   return (
     <div className={css.profileWrapper}>
       <div className={css.profileContainer}>
@@ -25,6 +27,32 @@ const Profile = () => {
               alt={`profile image ${id}`}
               placeholderSrc={placeholder}
             />
+          </div>
+          <div className={css.detailsContainer}>
+            <p>
+              <strong>Name:&nbsp;</strong>
+              {name}
+            </p>
+            <p>
+              <strong>DOB:&nbsp;</strong>
+              {dob}
+            </p>
+            <p>
+              <strong>Length:&nbsp;</strong>
+              {length}
+            </p>
+            <p>
+              <strong>Weight:&nbsp;</strong>
+              {kg}
+            </p>
+            <p>
+              <strong>Time:&nbsp;</strong>
+              {time}
+            </p>
+            <p>
+              <strong>Birthplace:&nbsp;</strong>
+              {birthplace}
+            </p>
           </div>
         </div>
         <p>{description}</p>

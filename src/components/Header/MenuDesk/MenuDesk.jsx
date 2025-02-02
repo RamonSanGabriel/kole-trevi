@@ -9,7 +9,13 @@ const MenuDesk = () => {
       <ul className={css.menuDeskList}>
         {menuRoutes.map(({ id, title, path, icon }) => (
           <li key={id} className={css.menuDeskListItem}>
-            <NavLink to={path} onClick={() => setIsOpen(prev)}>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? css.menuLinkActive : css.menuLink
+              }
+              to={path}
+              onClick={() => setIsOpen(prev)}
+            >
               <span>
                 {icon}
                 {title}

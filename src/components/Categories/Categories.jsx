@@ -1,4 +1,4 @@
-import './Categories.css';
+import css from './Categories.module.css';
 import { NavLink } from 'react-router-dom';
 import {
   categoryLinks,
@@ -13,13 +13,13 @@ const Categories = () => {
 
   return (
     <>
-      <div className="categoryDetails">
+      <div className={css.categoryDetails}>
         <h1>{title}</h1>
         <h6>{message}</h6>
 
         <p>{description}</p>
       </div>
-      <div className="categoryOptions">
+      <div className={css.categoryOptions}>
         <ul>
           {categoryOptions.map(({ id, cname, cdescription }) => (
             <li key={id}>
@@ -30,18 +30,24 @@ const Categories = () => {
         </ul>
       </div>
 
-      <div className="categoryListContainer">
-        <hr className="hr" />
+      <div className={css.categoryListContainer}>
+        <hr className={css.hr} />
         <form action="">
           <ul>
             {categoryLinks.map(({ id, link, path, icon: Icon }) => (
-              <li key={id} className="categoryListItem">
-                <NavLink to={path}>
-                  <button onClick={() => setShow(true)} className="categoryBtn">
-                    <Icon className="categoryIcons" />
+              <li key={id} className={css.categoryListItem}>
+                <div className={css.categoryLink}>
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? css.categoryLinkActive : css.categoryLink
+                    }
+                    onClick={() => setShow(true)}
+                    to={path}
+                  >
+                    <Icon className={css.categoryIcons} />
                     <h3>{link}</h3>
-                  </button>
-                </NavLink>
+                  </NavLink>
+                </div>
               </li>
             ))}
           </ul>

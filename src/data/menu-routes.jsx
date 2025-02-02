@@ -1,5 +1,6 @@
 import { BiHomeAlt2 } from 'react-icons/bi';
-import { FiSearch } from 'react-icons/fi';
+// import { FiSearch } from 'react-icons/fi';
+import { FaRegUser } from 'react-icons/fa';
 import { PiChatCircleBold } from 'react-icons/pi';
 import { IoPricetagsOutline } from 'react-icons/io5';
 
@@ -14,7 +15,7 @@ export const menuRoutes = [
     id: 2,
     title: 'Profile',
     path: '/profile',
-    icon: <FiSearch />,
+    icon: <FaRegUser />,
   },
   {
     id: 3,
