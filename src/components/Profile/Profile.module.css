@@ -98,6 +98,7 @@
   width: 100%;
   padding: 1rem;
   border-radius: 5px;
+  background-color: #f0f0f0;
   box-shadow: 1px 1px 4px #b7b5b5;
 
   & p {
@@ -110,7 +111,7 @@
   align-items: center;
   justify-content: left;
   padding: 0 1rem;
-  font-size: 0.75rem;
+  font-size: 0.688rem;
 
   @media (width > 767px) {
     margin: 0 2rem;

@@ -17,5 +17,8 @@ export const details = {
   length: '52cm',
   kg: '3kgs',
   time: '14:54 PM',
+  nationality: 'Filipino',
   birthplace: 'United Arab Emirates',
+  mother: 'Klaire Therese S. San Gabriel',
+  father: 'Ramon M. San Gabriel',
 };

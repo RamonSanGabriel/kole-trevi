@@ -7,7 +7,17 @@ const Profile = () => {
   const { id, title, message, description, image, placeholder } =
     profileDetails;
 
-  const { name, dob, length, kg, time, birthplace } = details;
+  const {
+    name,
+    dob,
+    length,
+    kg,
+    time,
+    nationality,
+    birthplace,
+    mother,
+    father,
+  } = details;
   return (
     <div className={css.profileWrapper}>
       <div className={css.profileContainer}>
@@ -50,8 +60,20 @@ const Profile = () => {
               {time}
             </p>
             <p>
+              <strong>Nationality:&nbsp;</strong>
+              {nationality}
+            </p>
+            <p>
               <strong>Birthplace:&nbsp;</strong>
               {birthplace}
+            </p>
+            <p>
+              <strong>Mom:&nbsp;</strong>
+              {mother}
+            </p>
+            <p>
+              <strong>Dad:&nbsp;</strong>
+              {father}
             </p>
           </div>
         </div>
