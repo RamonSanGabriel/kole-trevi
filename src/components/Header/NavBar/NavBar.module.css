@@ -39,18 +39,9 @@
   width: 100%;
   padding: 0.8rem;
 
-  &:hover {
-    background: linear-gradient(
-      90deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      purple
-    );
+  &:hover,
+  &:focus {
     transform: scale(1.1);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: var(--HIGHLIGHT-COLOR);
   }
 }

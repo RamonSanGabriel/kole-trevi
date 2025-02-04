@@ -1,28 +1,24 @@
-import './CategoryHome.css';
+import css from './CategoryHome.module.css';
 import { categoryHomeLinks } from '../../data/category-links';
 import { NavLink } from 'react-router-dom';
 
 const CategoryHome = () => {
   return (
-    <div className="categoryHomeWrapper">
-      <div className="categoryHomeContainer">
-        <hr />
-        <form action="">
-          <ul>
-            {categoryHomeLinks.map(({ id, path, link, icon: Icon }) => (
-              <li key={id} className="categoryHomeListItem">
-                <NavLink to={path}>
-                  <button className="categoryHomeBtn">
-                    <Icon className="categoryHomeIcons" />
-                    <h3>{link}</h3>
-                  </button>
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </form>
-        <hr />
-      </div>
+    <div className={css.categoryHomeWrapper}>
+      <hr />
+      <ul>
+        {categoryHomeLinks.map(({ id, path, link, icon: Icon }) => (
+          <li key={id} className={css.categoryHomeListItem}>
+            <div className={css.categoryHomeLink}>
+              <NavLink to={path} className={css.categoryHomeLink}>
+                <Icon className={css.categoryHomeIcons} />
+                <h3>{link}</h3>
+              </NavLink>
+            </div>
+          </li>
+        ))}
+      </ul>
+      <hr />
     </div>
   );
 };

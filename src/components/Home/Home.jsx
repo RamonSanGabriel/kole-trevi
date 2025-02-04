@@ -12,16 +12,13 @@ const Home = () => {
           <div className="heroContainer">
             <img className="heroImage" src={trev} alt="trevi image" />
           </div>
-          <div className="mainContainer">
-            {/* <CategoryHome /> */}
 
-            <div className="mainContent">
-              <h2 className="aboutMe">About me</h2>
-              <p>
-                <strong>{greeting}&nbsp;</strong>
-                {description}
-              </p>
-            </div>
+          <div className="mainContent">
+            <h2 className="aboutMe">About me</h2>
+            <p>
+              <strong>{greeting}&nbsp;</strong>
+              {description}
+            </p>
           </div>
         </div>
       </main>

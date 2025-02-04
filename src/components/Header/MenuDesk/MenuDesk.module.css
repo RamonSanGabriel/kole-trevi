@@ -5,44 +5,33 @@
 }
 .menuDeskList {
   display: none;
+
   @media (width > 767px) {
     display: flex;
     gap: 1rem;
+
     & span {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 0.5rem;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+        color: var(--HIGHLIGHT-COLOR);
+      }
     }
   }
 }
 
 .menuDeskListItem {
-  background-clip: text;
-  transition: all 250ms ease-in-out;
-  cursor: pointer;
   width: 100%;
   padding: 0.8rem;
-  border-color: darkgray;
-  color: #fff;
-
-  &:hover {
-    background: linear-gradient(
-      90deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      purple
-    );
-    transform: scale(1.1);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
 }
 
 .menuLinkActive {
-  /* composes: menuDeskListItem; */
   color: var(--HIGHLIGHT-COLOR);
+  font-weight: 700;
 }

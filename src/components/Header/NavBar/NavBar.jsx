@@ -1,4 +1,4 @@
-import './NavBar.css';
+import css from './NavBar.module.css';
 import Menu from '../Menu/Menu';
 import { useState } from 'react';
 
@@ -8,7 +8,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navWrapper">
+    <nav className={css.navWrapper}>
       <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
       <MenuDesk />
     </nav>

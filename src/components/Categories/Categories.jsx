@@ -16,7 +16,6 @@ const Categories = () => {
       <div className={css.categoryDetails}>
         <h1>{title}</h1>
         <h6>{message}</h6>
-
         <p>{description}</p>
       </div>
       <div className={css.categoryOptions}>
@@ -32,26 +31,24 @@ const Categories = () => {
 
       <div className={css.categoryListContainer}>
         <hr />
-        <form action="">
-          <ul>
-            {categoryLinks.map(({ id, link, path, icon: Icon }) => (
-              <li key={id} className={css.categoryListItem}>
-                <div className={css.categoryLink}>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive ? css.categoryLinkActive : css.categoryLink
-                    }
-                    onClick={() => setShow(true)}
-                    to={path}
-                  >
-                    <Icon className={css.categoryIcons} />
-                    <h3>{link}</h3>
-                  </NavLink>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </form>
+        <ul>
+          {categoryLinks.map(({ id, link, path, icon: Icon }) => (
+            <li key={id}>
+              <div className={css.categoryLink}>
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? css.categoryLinkActive : css.categoryLink
+                  }
+                  onClick={() => setShow(true)}
+                  to={path}
+                >
+                  <Icon className={css.categoryIcons} />
+                  <h3>{link}</h3>
+                </NavLink>
+              </div>
+            </li>
+          ))}
+        </ul>
         <hr />
       </div>
     </>

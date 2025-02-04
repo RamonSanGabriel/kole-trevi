@@ -4,20 +4,10 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Profile = () => {
-  const { id, title, message, description, image, placeholder } =
-    profileDetails;
-
-  const {
-    name,
-    dob,
-    length,
-    kg,
-    time,
-    nationality,
-    birthplace,
-    mother,
-    father,
-  } = details;
+  //prettier-ignore
+  const { id, title, message, description, image, placeholder } = profileDetails;
+  //prettier-ignore
+  const {name, dob, length, kg, time, nationality, birthplace, mother, father} = details;
   return (
     <div className={css.profileWrapper}>
       <div className={css.profileContainer}>
@@ -29,52 +19,51 @@ const Profile = () => {
               className={css.lazyLoad}
               key={id}
               src={image}
-              wrapperProps={{
-                // If you need to, you can tweak the effect transition using the wrapper style.
-                style: { transitionDelay: '1s' },
-              }}
+              // wrapperProps={{
+              //   // If you need to, you can tweak the effect transition using the wrapper style.
+              //   style: { transitionDelay: '1s' },
+              // }}
               effect="blur"
               alt={`profile image ${id}`}
               placeholderSrc={placeholder}
             />
           </div>
           <div className={css.detailsContainer}>
-            <p>
+            <div>
               <strong>Name:&nbsp;</strong>
-              {name}
-            </p>
-            <p>
+              <p> {name}</p>
+            </div>
+            <div>
               <strong>DOB:&nbsp;</strong>
-              {dob}
-            </p>
-            <p>
+              <p>{dob}</p>
+            </div>
+            <div>
               <strong>Length:&nbsp;</strong>
-              {length}
-            </p>
-            <p>
+              <p>{length}</p>
+            </div>
+            <div>
               <strong>Weight:&nbsp;</strong>
-              {kg}
-            </p>
-            <p>
+              <p> {kg}</p>
+            </div>
+            <div>
               <strong>Time:&nbsp;</strong>
-              {time}
-            </p>
-            <p>
+              <p> {time}</p>
+            </div>
+            <div>
               <strong>Nationality:&nbsp;</strong>
-              {nationality}
-            </p>
-            <p>
+              <p>{nationality}</p>
+            </div>
+            <div>
               <strong>Birthplace:&nbsp;</strong>
-              {birthplace}
-            </p>
-            <p>
+              <p> {birthplace}</p>
+            </div>
+            <div>
               <strong>Mom:&nbsp;</strong>
-              {mother}
-            </p>
-            <p>
+              <p>{mother}</p>
+
               <strong>Dad:&nbsp;</strong>
-              {father}
-            </p>
+              <p>{father}</p>
+            </div>
           </div>
         </div>
         <p>{description}</p>
