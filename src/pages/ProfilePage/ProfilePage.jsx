@@ -8,6 +8,7 @@ import Loader from '../../components/Loader/Loader';
 const ProfilePage = () => {
   const location = useLocation();
   const backBtn = location.state?.from ?? '/';
+
   return (
     <HelmetProvider>
       <Helmet>
@@ -15,7 +16,7 @@ const ProfilePage = () => {
       </Helmet>
       <Profile />
       <Link to={backBtn}>
-        <BackBtn />
+        <BackBtn to={backBtn} />
       </Link>
 
       <Suspense fallback={<Loader />}>

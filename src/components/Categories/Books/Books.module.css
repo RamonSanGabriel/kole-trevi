@@ -48,6 +48,9 @@
 }
 .bookImage {
   width: 100%;
-  height: 400px;
   overflow: hidden;
+
+  @media (width > 767px) {
+    height: 400px;
+  }
 }

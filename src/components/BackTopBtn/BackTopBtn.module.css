@@ -10,15 +10,15 @@
   align-items: center;
   position: fixed;
   right: 1rem;
-  bottom: 1rem;
+  bottom: 0.75rem;
   z-index: 10;
   transition: all 0.3s ease;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .button:hover {
   /* background-color: var(--LOADER-COLOR-LIGHT); */
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .button.md {

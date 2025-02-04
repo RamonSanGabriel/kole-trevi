@@ -44,13 +44,16 @@
   }
 }
 .lazyLoad {
+  width: 100%;
   cursor: pointer;
   object-fit: contain;
   object-position: center;
-  width: 100%;
 }
 .eventImage {
-  min-width: 100%;
-  max-height: 400px;
+  width: 100%;
   overflow: hidden;
+
+  @media (width > 767px) {
+    height: 400px;
+  }
 }

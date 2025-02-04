@@ -34,6 +34,8 @@ const Events = () => {
                       src={image}
                       alt={`event image ${id}`}
                       placeholderSrc={placeholder}
+                      // height={200}
+                      // width={300}
                     />
                   </div>
                 </div>
