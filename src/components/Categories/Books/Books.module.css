@@ -11,13 +11,13 @@
   }
 }
 .bookDetails {
-  max-width: 1024px;
+  /* max-width: 1024px; */
   margin: 0 auto;
   padding: 1rem;
   text-align: justify;
 }
 .bookContainer {
-  max-width: 1024px;
+  /* max-width: 1024px; */
   margin: 0 auto;
 }
 .bookList {

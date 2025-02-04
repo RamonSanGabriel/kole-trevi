@@ -11,13 +11,13 @@
   }
 }
 .photoDetails {
-  max-width: 1024px;
+  /* max-width: 1024px; */
   margin: 0 auto;
   padding: 1rem;
   text-align: justify;
 }
 .photoContainer {
-  max-width: 1024px;
+  /* max-width: 1024px; */
   margin: 0 auto;
 }
 .photoList {

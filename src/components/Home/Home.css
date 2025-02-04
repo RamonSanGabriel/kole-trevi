@@ -18,13 +18,13 @@
 }
 
 .mainContainer {
-  max-width: 1024px;
+  /* max-width: 1024px; */
   text-align: justify;
   /* padding: 1rem; */
   margin: 0 auto;
 }
 .mainContent {
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 
   & p {
     padding: 1rem 0;
@@ -36,7 +36,7 @@
   }
 }
 .aboutMe {
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 
   @media (width > 767px) {
     & h2 {

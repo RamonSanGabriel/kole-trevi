@@ -1,8 +1,9 @@
 .headerWrapper {
-  /* max-width: 1440px; */
+  width: 100%;
   margin: 0 auto;
-  position: sticky;
-  top: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 100;
 }
 .headerContainer {

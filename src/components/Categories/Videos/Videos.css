@@ -12,13 +12,13 @@
   }
 }
 .videoDetails {
-  max-width: 1024px;
+  /* max-width: 1024px; */
   margin: 0 auto;
   padding: 1rem;
   text-align: justify;
 }
 .videoContainer {
-  max-width: 1024px;
+  /* max-width: 1024px; */
   margin: 0 auto;
   /* padding: 1rem; */
 }

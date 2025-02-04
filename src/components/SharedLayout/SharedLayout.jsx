@@ -9,14 +9,14 @@ import { BackTopBtn } from '../BackTopBtn/BackTopBtn';
 
 const SharedLayout = () => {
   return (
-    <div>
+    <>
       <Header />
       <Suspense fallback={<Loader />}>
         <Outlet />
         <BackTopBtn />
       </Suspense>
       <Footer />
-    </div>
+    </>
   );
 };
 

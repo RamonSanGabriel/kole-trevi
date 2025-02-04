@@ -28,10 +28,8 @@ const Toys = () => {
                   <div className={css.lazyLoadContainer}>
                     <LazyLoadImage
                       className={css.lazyLoad}
-                      key={id}
+                      // key={id}
                       src={image}
-                      // srcSet={`${image} 400w`}
-
                       effect="blur"
                       alt={`toy image ${id}`}
                       placeholderSrc={placeholder}

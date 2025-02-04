@@ -1,24 +1,26 @@
 .toyWrapper {
-  @media (width > 767px) {
+  margin-top: 1rem;
+  /* @media (width > 767px) {
     padding: 0 1rem;
-  }
-  & h2 {
-    margin-bottom: 1rem;
-  }
+  } */
 
   & li {
     margin: 1rem 0;
   }
 }
 .toyDetails {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 1rem;
+  /* max-width: 1024px; */
+  /* margin: 0 auto; */
+  /* padding: 1rem; */
   text-align: justify;
+
+  & h2 {
+    margin-bottom: 1rem;
+  }
 }
 .toyContainer {
-  max-width: 1024px;
-  margin: 0 auto;
+  /* max-width: 1024px; */
+  /* margin: 0 auto; */
 }
 .toyList {
   display: grid;
@@ -34,7 +36,7 @@
 
   & li {
     border-radius: 5px;
-    margin: 1rem;
+    /* margin: 1rem; */
     box-shadow: 1px 1px 4px #b7b5b5;
   }
 }
@@ -48,14 +50,14 @@
   }
 }
 .lazyLoad {
-  width: 100%;
-  object-fit: contain;
-  object-position: center;
   cursor: pointer;
+  object-fit: contain;
+  object-position: top;
+  width: 100%;
 }
 
 .toyImage {
-  height: 400px;
+  /* height: 400px; */
   width: 100%;
   overflow: hidden;
 }
