@@ -1,24 +1,20 @@
 .photoWrapper {
-  @media (width > 767px) {
-    padding: 0 1rem;
-  }
+  margin-top: 1rem;
+
   & h2 {
     margin-bottom: 1rem;
   }
-
-  & li {
-    margin: 1rem 0;
-  }
 }
 .photoDetails {
-  /* max-width: 1024px; */
-  margin: 0 auto;
-  padding: 1rem;
   text-align: justify;
+
+  & p {
+    margin-bottom: 1rem;
+  }
 }
 .photoContainer {
   /* max-width: 1024px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 .photoList {
   display: grid;
@@ -26,7 +22,7 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  /* padding: 2rem; */
+  padding: 0 0.5rem;
 
   @media (width > 767px) {
     grid-template-columns: repeat(3, 1fr);
@@ -34,7 +30,7 @@
 
   & li {
     border-radius: 5px;
-    margin: 1rem;
+    /* margin: 1rem; */
     box-shadow: 1px 1px 4px #b7b5b5;
   }
 }

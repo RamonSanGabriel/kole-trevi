@@ -31,7 +31,7 @@ const Categories = () => {
       </div>
 
       <div className={css.categoryListContainer}>
-        <hr className={css.hr} />
+        <hr />
         <form action="">
           <ul>
             {categoryLinks.map(({ id, link, path, icon: Icon }) => (
@@ -52,7 +52,7 @@ const Categories = () => {
             ))}
           </ul>
         </form>
-        <hr className="hr" />
+        <hr />
       </div>
     </>
   );

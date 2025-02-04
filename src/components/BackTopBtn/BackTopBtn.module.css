@@ -13,11 +13,12 @@
   bottom: 1rem;
   z-index: 10;
   transition: all 0.3s ease;
-  cursor: pointer;
+  opacity: 1;
 }
 
 .button:hover {
-  background-color: var(--LOADER-COLOR-LIGHT);
+  /* background-color: var(--LOADER-COLOR-LIGHT); */
+  opacity: 0.8;
 }
 
 .button.md {

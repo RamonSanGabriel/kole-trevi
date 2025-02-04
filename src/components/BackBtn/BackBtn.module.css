@@ -7,7 +7,9 @@
   color: var(--LIGHT);
   border-radius: 5px;
   padding: 0.5rem;
-  /* opacity: 0.7; */
+  transition: all 0.3s ease;
+
+  opacity: 1;
 
   @media (width > 767px) {
     display: flex;
@@ -17,6 +19,8 @@
   }
 
   &:hover {
-    opacity: 1;
+    /* background-color: var(--LOADER-COLOR-LIGHT); */
+
+    opacity: 0.8;
   }
 }
