@@ -12,6 +12,7 @@ export const profileDetails = {
 };
 
 export const details = {
+  id: 1,
   name: 'Kole Trevi S. San Gabriel',
   dob: 'October 28, 2019',
   length: '52cm',

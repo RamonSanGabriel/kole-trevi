@@ -78,13 +78,13 @@
 }
 
 .detailsContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* align-items: top; */
-  /* justify-content: space-between; */
-  column-gap: 10px;
-  font-size: 0.588rem;
-  text-align: left;
+  & ul {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+    font-size: 0.588rem;
+    text-align: left;
+  }
 
   @media (width > 767px) {
     font-size: 1rem;
