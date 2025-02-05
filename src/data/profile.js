@@ -19,7 +19,7 @@ export const details = {
   kg: '3kgs',
   time: '14:54 PM',
   nationality: 'Filipino',
-  birthplace: 'Dubai, U.A.E',
-  mother: 'Klaire Therese S. San Gabriel',
+  birthplace: 'Dubai',
+  mother: 'Klaire S. San Gabriel',
   father: 'Ramon M. San Gabriel',
 };

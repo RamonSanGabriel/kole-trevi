@@ -31,74 +31,58 @@ const Profile = () => {
           <div className={css.detailsContainer}>
             <ul>
               <li>
-                <h5>Name:&nbsp;</h5>
-                <p> {name}</p>
+                <p>
+                  <strong>Name:&nbsp;</strong> {name}
+                </p>
               </li>
               <li>
-                <h5>Length:&nbsp;</h5>
-                <p>{length}</p>
+                <p>
+                  <strong>Length:&nbsp;</strong>
+                  {length}
+                </p>
               </li>
               <li>
-                <h5>DOB:&nbsp;</h5>
-                <p>{dob}</p>
+                <p>
+                  <strong>DOB:&nbsp;</strong>
+                  {dob}
+                </p>
               </li>
               <li>
-                <h5>Weight:&nbsp;</h5>
-                <p> {kg}</p>
+                <p>
+                  <strong>Weight:&nbsp;</strong> {kg}
+                </p>
               </li>
               <li>
-                <h5>Nationality:&nbsp;</h5>
-                <p>{nationality}</p>
+                <p>
+                  <strong>Nationality:&nbsp;</strong>
+                  {nationality}
+                </p>
               </li>
               <li>
-                <h5>Time:&nbsp;</h5>
-                <p> {time}</p>
+                <p>
+                  <strong>Time:&nbsp;</strong> {time}
+                </p>
               </li>
 
               <li>
-                <h5>Mom:&nbsp;</h5>
-                <p>{mother}</p>
+                <p>
+                  <strong>Mom:&nbsp;</strong>
+                  {mother}
+                </p>
               </li>
               <li>
-                <h5>Birthplace:&nbsp;</h5>
-                <p> {birthplace}</p>
+                <p>
+                  <strong>Birthplace:&nbsp;</strong> {birthplace}
+                </p>
               </li>
               <li>
-                <h5>Dad:&nbsp;</h5>
-                <p>{father}</p>
+                <p>
+                  <strong>Dad:&nbsp;</strong>
+                  {father}
+                </p>
               </li>
             </ul>
           </div>
-          {/* <div className={css.detailsContainer} >
-            <ul>
-              //prettier-ignore
-              {details.map(
-                ({
-                  id,
-                  name,
-                  dob,
-                  length,
-                  kg,
-                  time,
-                  nationality,
-                  birthplace,
-                  mother,
-                  father,
-                }) => (
-                  <li key={id}>
-                    <h5>{name}:</h5>
-                    <p>{dob}</p>
-                    <p>{length}</p>
-                    <p>{kg}</p>
-                    <p>{time}</p>
-                    <p>{nationality}</p>
-                    <p>{birthplace}</p>
-                    <p>{mother}</p>
-                    <p>{father}</p>
-                  </li>
-                ))}
-            </ul>
-          </div> */}
         </div>
         <p>{description}</p>
       </div>

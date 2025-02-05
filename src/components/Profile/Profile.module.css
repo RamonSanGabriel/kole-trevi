@@ -73,24 +73,25 @@
     grid-template-columns: repeat(2, 1fr);
   }
   & p {
-    text-align: left;
+    text-align: center;
   }
 }
 
 .detailsContainer {
   & ul {
     display: grid;
-    grid-template-columns: 2fr 1fr;
     column-gap: 10px;
-    font-size: 0.588rem;
-    text-align: left;
+    align-items: center;
+    font-size: 0.625rem;
+    grid-template-columns: 2fr 1fr;
+
+    & li p {
+      text-align: left;
+      margin: 0;
+    }
   }
 
   @media (width > 767px) {
     font-size: 1rem;
-  }
-
-  & p {
-    margin: 0;
   }
 }
