@@ -3,7 +3,8 @@ import Home from '../../components/Home/Home';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import Loader from '../../components/Loader/Loader';
-import CategoryHome from '../../components/CategoryHome/CategoryHome';
+// import CategoryHome from '../../components/CategoryHome/CategoryHome';
+import Categories from '../../components/Categories/Categories';
 
 const HomePage = () => {
   return (
@@ -12,7 +13,8 @@ const HomePage = () => {
         <title>Home</title>
       </Helmet>
       <Home />
-      <CategoryHome />
+      {/* <CategoryHome /> */}
+      <Categories />
 
       <Suspense fallback={<Loader />}>
         <Outlet />

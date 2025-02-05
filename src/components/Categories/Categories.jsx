@@ -14,8 +14,8 @@ const Categories = () => {
   return (
     <>
       <div className={css.categoryDetails}>
-        <h1>{title}</h1>
-        <h6>{message}</h6>
+        <h2>{title}</h2>
+        {/* <h6>{message}</h6> */}
         <p>{description}</p>
       </div>
       <div className={css.categoryOptions}>
