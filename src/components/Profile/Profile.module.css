@@ -82,15 +82,11 @@
   grid-template-columns: 1fr 1fr;
   /* align-items: top; */
   /* justify-content: space-between; */
-  column-gap: 15px;
+  column-gap: 10px;
   font-size: 0.588rem;
   text-align: left;
 
   @media (width > 767px) {
-    /* grid-template-columns: 1fr 1fr; */
-
-    /* margin: 0 2rem; */
-    /* gap: 10px; */
     font-size: 1rem;
   }
 

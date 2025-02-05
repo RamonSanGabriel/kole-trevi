@@ -54,13 +54,14 @@ const Profile = () => {
               <p>{nationality}</p>
             </div>
             <div>
+              <strong>Mom:&nbsp;</strong>
+              <p>{mother}</p>
+            </div>
+            <div>
               <strong>Birthplace:&nbsp;</strong>
               <p> {birthplace}</p>
             </div>
             <div>
-              <strong>Mom:&nbsp;</strong>
-              <p>{mother}</p>
-
               <strong>Dad:&nbsp;</strong>
               <p>{father}</p>
             </div>
