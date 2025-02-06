@@ -4,7 +4,7 @@ import profile1small from '../images/ProfileImages/profile1-small.jpg';
 export const profileDetails = {
   id: 1,
   title: 'Profile Page',
-  message: '( I was only few days old in this photo )',
+  message: '(I was only few days old in this photo)',
   image: profile1,
   placeholder: profile1small,
   description:

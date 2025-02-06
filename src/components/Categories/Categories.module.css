@@ -1,8 +1,8 @@
 .categoryDetails {
   font-size: 1rem;
-  text-align: left;
+  text-align: center;
 
-  & h2 {
+  & h1 {
     margin-top: 1rem;
   }
 

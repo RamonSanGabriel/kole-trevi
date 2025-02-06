@@ -2,7 +2,7 @@
 import { FcAutomotive,FcCompactCamera,FcFilmReel,FcReading,FcSportsMode } from 'react-icons/fc';
 
 export const categoryDetails = {
-  title: 'Categories',
+  title: 'Category Page',
   message: '(Click the icons below to show details)',
   description: 'The below description is in chronological order.',
 };
