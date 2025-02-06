@@ -1,10 +1,14 @@
 import './Home.css';
 import trev from '../../images/trev1.png';
-// import CategoryHome from '../CategoryHome/CategoryHome';
+import { useEffect } from 'react';
 import { homeAbout } from '../../data/home';
 
 const Home = () => {
   const { description, greeting } = homeAbout;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <main>
