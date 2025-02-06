@@ -84,6 +84,6 @@ export const videoList = [
     price: 10.99,
     description: 'This is video',
     image: vidImage9,
-    url: 'https://youtube.com/shorts/26yveUlo8O0',
+    url: 'https://youtube.com/shorts/26yveUlo8O0?feature=share'
   },
 ];
