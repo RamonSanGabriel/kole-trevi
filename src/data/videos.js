@@ -20,7 +20,7 @@ export const videoList = [
     price: 10.99,
     description: 'This is video',
     image: vidImage1,
-    url: 'https://youtube.com/shorts/FbeTP5pS0g0',
+    url: 'https://youtube.com/shorts/FbeTP5pS0g0?feature=share',
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ export const videoList = [
     price: 10.99,
     description: 'This is video',
     image: vidImage2,
-    url: 'https://youtube.com/shorts/SweF0naCJMU',
+    url: 'https://youtube.com/shorts/SweF0naCJMU?feature=share',
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const videoList = [
     price: 10.99,
     description: 'This is video',
     image: vidImage3,
-    url: 'https://youtube.com/shorts/seAVVM6Eki0',
+    url: 'https://youtube.com/shorts/seAVVM6Eki0?feature=share',
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ export const videoList = [
     price: 10.99,
     description: 'This is video',
     image: vidImage4,
-    url: 'https://youtube.com/shorts/4ugsmH-_VIc',
+    url: 'https://youtube.com/shorts/4ugsmH-_VIc?feature=share',
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const videoList = [
     price: 10.99,
     description: 'This is video',
     image: vidImage5,
-    url: 'https://youtube.com/shorts/0lYp-TLL-jw',
+url:'https://youtube.com/shorts/0lYp-TLL-jw?feature=share',
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ export const videoList = [
     price: 10.99,
     description: 'This is video',
     image: vidImage6,
-    url: 'https://youtube.com/shorts/8qNHUNnYh0U',
+    url: 'https://youtube.com/shorts/8qNHUNnYh0U?feature=share',
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ export const videoList = [
     price: 10.99,
     description: 'This is video',
     image: vidImage7,
-    url: 'https://youtube.com/shorts/XRUoqQsgDPU',
+    url: 'https://youtube.com/shorts/XRUoqQsgDPU?feature=share',
   },
   {
     id: 8,
@@ -76,7 +76,7 @@ export const videoList = [
     price: 10.99,
     description: 'This is video',
     image: vidImage8,
-    url: 'https://youtube.com/shorts/m6DnbxE-u0I',
+    url: 'https://youtube.com/shorts/m6DnbxE-u0I?feature=share',
   },
   {
     id: 9,
@@ -84,6 +84,6 @@ export const videoList = [
     price: 10.99,
     description: 'This is video',
     image: vidImage9,
-    url: 'https://youtube.com/shorts/26yveUlo8O0',
+    url: 'https://youtube.com/shorts/26yveUlo8O0?feature=share'
   },
 ];
