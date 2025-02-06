@@ -70,7 +70,10 @@
   box-shadow: 1px 1px 4px #b7b5b5;
 
   @media (width > 767px) {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: center;
   }
   & p {
     text-align: center;
@@ -81,17 +84,22 @@
   & ul {
     display: grid;
     /* column-gap: 10px; */
-    align-items: center;
+    /* align-items: center; */
     font-size: 0.825rem;
     grid-template-columns: 2fr 1fr;
+    row-gap: 10px;
+
+    @media (width > 767px) {
+      font-size: 1.25rem;
+    }
 
     & li p {
       text-align: left;
       margin: 0;
-    }
-  }
 
-  @media (width > 767px) {
-    font-size: 1rem;
+      @media (width > 767px) {
+        margin: 1rem 0;
+      }
+    }
   }
 }
