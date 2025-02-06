@@ -38,7 +38,15 @@
     }
   }
 }
-.reactPlayer {
+.reactPlayerWrapper {
+  display: flex;
+}
+.reactPlayerContainer {
   overflow: hidden;
   object-position: center;
+  margin: 0 auto;
+}
+
+.reactPlayer {
+  margin: 0 auto;
 }

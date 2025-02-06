@@ -1,14 +1,28 @@
 import './Videos.css';
 import { videoDetails, videoList } from '../../../data/videos';
 import { useEffect } from 'react';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
+// import { useState } from 'react';
+import ReactPlayer from 'react-player/lazy';
 
 const Videos = () => {
+  // const [start, setStart] = useState(false);
   const { title, description } = videoDetails;
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleClick = (e) => {
+    // const click = e.target.value;
+    if (start === onStart) {
+      setStart(true);
+      console.log(setStart);
+    } else {
+      setStart(false);
+    }
+  };
+
   return (
     <>
       {/* <CategoryHome /> */}
@@ -27,26 +41,32 @@ const Videos = () => {
                 </h4>
                 {/* add NavLink */}
                 {/* <img src={url} alt={description} /> */}
-                <div className="reactPlayer">
-                  <ReactPlayer
-                    controls
-                    loop="true"
-                    muted="true"
-                    light={<img src={image} alt="thumbnail" />}
-                    pip={url}
-                    stopOnUnmount={false}
-                    url={url}
-                    width={300}
-                    height={400}
-                    // config={{
-                    //   youtube: {
-                    //     playerVars: { showinfo: 1 },
-                    //   },
-                    //   facebook: {
-                    //     appId: '12345',
-                    //   },
-                    // }}
-                  />
+                <div className="reactPlayerWrapper">
+                  <div className="reactPlayerContainer">
+                    <ReactPlayer
+                      // onClick={(e) => {
+                      //   handleClick(e.target.value);
+                      // }}
+                      controls
+                      loop={true}
+                      muted={true}
+                      light={
+                        <img
+                          className="reactPlayer"
+                          src={image}
+                          alt="thumbnail"
+                        />
+                      }
+                      pip={true}
+                      stopOnUnmount={false}
+                      url={url}
+                      width={300}
+                      height={400}
+                      playsinline={false}
+                      onReady={() => console.log('onReady Callback')}
+                      onStart={() => console.log('onStart Callback')}
+                    />
+                  </div>
                 </div>
                 <p>
                   {description}&nbsp;{id}

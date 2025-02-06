@@ -23,10 +23,10 @@ export const menuRoutes = [
     path: '/category',
     icon: <IoPricetagsOutline />,
   },
-  {
-    id: 4,
-    title: 'Contacts',
-    path: '/contacts',
-    icon: <PiChatCircleBold />,
-  },
+  // {
+  //   id: 4,
+  //   title: 'Contacts',
+  //   path: '/contacts',
+  //   icon: <PiChatCircleBold />,
+  // },
 ];
