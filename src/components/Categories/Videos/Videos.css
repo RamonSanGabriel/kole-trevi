@@ -23,6 +23,10 @@
   padding: 0 0.5rem;
 
   @media (width > 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (width > 1023px) {
     grid-template-columns: repeat(3, 1fr);
   }
 
