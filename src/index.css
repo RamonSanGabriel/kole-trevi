@@ -37,7 +37,8 @@ a:hover {
 }
 
 body {
-  width: 100%;
+  /* width: 100%; */
+  /* display: flex; */
   color: var(--PRIMARY);
   min-width: 320px;
   padding: 5rem 1rem 1rem;

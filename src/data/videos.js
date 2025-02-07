@@ -52,7 +52,7 @@ export const videoList = [
     price: 10.99,
     description: 'This is video',
     image: vidImage5,
-url:'https://youtube.com/shorts/0lYp-TLL-jw?feature=share',
+    url: 'https://youtube.com/shorts/0lYp-TLL-jw?feature=share',
   },
   {
     id: 6,
@@ -84,6 +84,6 @@ url:'https://youtube.com/shorts/0lYp-TLL-jw?feature=share',
     price: 10.99,
     description: 'This is video',
     image: vidImage9,
-    url: 'https://youtube.com/shorts/26yveUlo8O0?feature=share'
+    url: 'https://youtube.com/shorts/26yveUlo8O0?feature=share',
   },
 ];

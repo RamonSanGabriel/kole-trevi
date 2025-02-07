@@ -1,6 +1,6 @@
 .footerContainer {
   background-color: #fff;
-  padding: 1rem;
+  padding: 2rem 0 0;
   & p {
     font-size: 0.75rem;
   }

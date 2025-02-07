@@ -17,36 +17,35 @@ const Toys = () => {
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
-        <div className={css.toyContainer}>
-          <ul className={css.toyList}>
-            {toyList.map(({ id, name, image, description, placeholder }) => (
-              <li key={id}>
-                <h4>
-                  {name}&nbsp; {id}
-                </h4>
-                <div className={css.toyImage}>
-                  <div className={css.lazyLoadContainer}>
-                    <LazyLoadImage
-                      className={css.lazyLoad}
-                      // key={id}
-                      src={image}
-                      effect="blur"
-                      alt={`toy image ${id}`}
-                      placeholderSrc={placeholder}
-                    />
-                  </div>
+        {/* <div className={css.toyContainer}> */}
+        <ul className={css.toyList}>
+          {toyList.map(({ id, name, image, description, placeholder }) => (
+            <li key={id}>
+              <h4>
+                {name}&nbsp; {id}
+              </h4>
+              <div className={css.toyImage}>
+                <div className={css.lazyLoadContainer}>
+                  <LazyLoadImage
+                    className={css.lazyLoad}
+                    // key={id}
+                    src={image}
+                    effect="blur"
+                    alt={`toy image ${id}`}
+                    placeholderSrc={placeholder}
+                  />
                 </div>
-                <p>
-                  {description}&nbsp;{id}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </div>
+              </div>
+              <p>
+                {description}&nbsp;{id}
+              </p>
+            </li>
+          ))}
+        </ul>
+        {/* </div> */}
       </div>
     </>
   );
 };
 
 export default Toys;
-// srcSet={`${image}1600x800 1600w`}
