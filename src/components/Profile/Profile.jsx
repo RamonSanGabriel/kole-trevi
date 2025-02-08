@@ -5,7 +5,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Profile = () => {
   //prettier-ignore
-  const { id, title, message, description, image, placeholder } = profileDetails;
+  const { id, title, message, hobbies, image, placeholder } = profileDetails;
   //prettier-ignore
   const {name, dob, length, kg, time, nationality, birthplace, mother, father} = details;
   return (
@@ -84,7 +84,11 @@ const Profile = () => {
             </ul>
           </div>
         </div>
-        <p>{description}</p>
+
+        <p>
+          <strong>Hobbies:&nbsp;</strong>
+          {hobbies}
+        </p>
       </div>
     </div>
   );
