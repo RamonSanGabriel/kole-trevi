@@ -1,4 +1,6 @@
 import css from './Books.module.css';
+import style from '../../Categories/CategoryCommon.module.css';
+
 import { bookDetails, bookList } from '../../../data/book.js';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -15,22 +17,22 @@ const Books = () => {
   return (
     <>
       {/* <CategoryHome /> */}
-      <div className={css.bookWrapper}>
-        <div className={css.bookDetails}>
+      <div className={style.bookWrapper}>
+        <div className={style.bookDetails}>
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
-        <div className={css.bookContainer}>
-          <ul className={css.bookList} onClick={() => setOpen(true)}>
+        <div className={style.bookContainer}>
+          <ul className={style.bookList} onClick={() => setOpen(true)}>
             {bookList.map(({ id, name, description, image, placeholder }) => (
               <li key={id} onClick={() => setOpen(true)}>
                 <h4>
                   {name}&nbsp;{id}
                 </h4>
-                <div className={css.bookImage}>
-                  <div className={css.lazyLoadContainer}>
+                <div className={style.bookImage}>
+                  <div className={style.lazyLoadContainer}>
                     <LazyLoadImage
-                      className={css.lazyLoad}
+                      className={style.lazyLoad}
                       key={id}
                       effect="blur"
                       src={image}

@@ -5,11 +5,11 @@ import { BsChevronDoubleLeft } from 'react-icons/bs';
 
 // import { animateScroll as scroll } from 'react-scroll';
 
-const BackBtn = ({ to }) => {
+const BackBtn = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(to);
+    navigate(-1);
   };
   // const [show, setShow] = useState(false);
   // useEffect(() => {

@@ -1,4 +1,4 @@
-.bookWrapper {
+/* .bookWrapper {
   margin-top: 1rem;
 
   & h2 {
@@ -27,7 +27,6 @@
 
   & li {
     border-radius: 5px;
-    /* margin: 1rem; */
     box-shadow: 1px 1px 4px #b7b5b5;
   }
 }
@@ -53,4 +52,4 @@
   @media (width > 767px) {
     height: 400px;
   }
-}
+} */

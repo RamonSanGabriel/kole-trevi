@@ -47,7 +47,7 @@
   width: 100%;
 } */
 
-.toyImage {
+/* .toyImage {
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -58,4 +58,4 @@
   @media (width > 1023px) {
     height: 400px;
   }
-}
+} */
