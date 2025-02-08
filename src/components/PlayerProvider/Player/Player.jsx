@@ -1,4 +1,5 @@
-import ReactPlayer from 'react-player/youtube';
+// import ReactPlayer from 'react-player/youtube';
+import ReactPlayer from 'react-player/lazy';
 import Loader from '../../Loader/Loader';
 import css from './Player.module.css';
 import style from '../../Categories/CategoryCommon.module.css';
