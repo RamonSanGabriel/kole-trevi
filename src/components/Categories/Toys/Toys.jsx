@@ -1,5 +1,6 @@
 import { toyList, toyDetails } from '../../../data/toys';
 import css from './Toys.module.css';
+import style from '../../Categories/CategoryCommon.module.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { useEffect } from 'react';
@@ -12,22 +13,22 @@ const Toys = () => {
 
   return (
     <>
-      <div className={css.toyWrapper}>
-        <div className={css.toyDetails}>
+      <div className={style.toyWrapper}>
+        <div className={style.toyDetails}>
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
         {/* <div className={css.toyContainer}> */}
-        <ul className={css.toyList}>
+        <ul className={style.toyList}>
           {toyList.map(({ id, name, image, description, placeholder }) => (
             <li key={id}>
               <h4>
                 {name}&nbsp; {id}
               </h4>
               <div className={css.toyImage}>
-                <div className={css.lazyLoadContainer}>
+                <div className={style.lazyLoadContainer}>
                   <LazyLoadImage
-                    className={css.lazyLoad}
+                    className={style.lazyLoad}
                     // key={id}
                     src={image}
                     effect="blur"

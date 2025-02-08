@@ -2,6 +2,7 @@ z-index:
 header = 999
 backTopBtn = 10
 backBtn = 10
+modal = 1000
 
 
 

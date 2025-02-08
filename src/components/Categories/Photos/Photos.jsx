@@ -1,7 +1,7 @@
 // import { NavLink } from 'react-router-dom';
 import { photoDetails, photoList } from '../../../data/photos.js';
-import css from './Photos.module.css';
-// import { Suspense } from 'react';
+import style from '../../Categories/CategoryCommon.module.css';
+
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { useEffect } from 'react';
@@ -14,25 +14,23 @@ const Photos = () => {
   }, []);
   return (
     <>
-      {/* <CategoryHome /> */}
-      <div className={css.photoWrapper}>
-        <div className={css.photoDetails}>
+      <div className={style.photoWrapper}>
+        <div className={style.photoDetails}>
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
-        <div className={css.photoContainer}>
-          <ul className={css.photoList}>
+        <div className={style.photoContainer}>
+          <ul className={style.photoList}>
             {photoList.map(({ id, name, description, image, placeholder }) => (
-              // <Suspense>
               <li key={id}>
                 <h4>
                   {name} &nbsp;
                   {id}
                 </h4>
-                <div className={css.photoImage}>
-                  <div className={css.lazyLoadContainer}>
+                <div className={style.photoImage}>
+                  <div className={style.lazyLoadContainer}>
                     <LazyLoadImage
-                      className={css.lazyLoad}
+                      className={style.lazyLoad}
                       key={id}
                       effect="blur"
                       src={image}
@@ -40,16 +38,12 @@ const Photos = () => {
                       placeholderSrc={placeholder}
                     />
                   </div>
-                  {/* <NavLink>
-                      <img src={image} alt={description} loading="lazy" />
-                    </NavLink> */}
                 </div>
                 <p>
                   {description} &nbsp;
                   {id}
                 </p>
               </li>
-              // </Suspense>
             ))}
           </ul>
         </div>

@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 import Categories from '../../components/Categories/Categories';
 import Loader from '../../components/Loader/Loader';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
@@ -8,7 +8,6 @@ import { Link, useLocation, Outlet } from 'react-router-dom';
 const CategoryPage = () => {
   const location = useLocation();
   const backBtn = location.state?.from ?? '/';
-  console.log(location);
 
   return (
     <HelmetProvider>
@@ -16,7 +15,6 @@ const CategoryPage = () => {
         <title>Category</title>
       </Helmet>
       <Categories />
-
       <Link to={backBtn}>
         <BackBtn />
       </Link>
