@@ -1,6 +1,4 @@
-import css from './Events.module.css';
 import style from '../../Categories/CategoryCommon.module.css';
-
 import { eventDetails, eventList } from '../../../data/events';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -19,7 +17,6 @@ const Events = () => {
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
-        {/* <div className={css.eventContainer}> */}
         <ul className={style.eventList}>
           {eventList.map(({ id, name, description, image, placeholder }) => (
             <li key={id}>
@@ -27,7 +24,7 @@ const Events = () => {
                 {name} &nbsp;
                 {id}
               </h4>
-              <div className={css.eventImage}>
+              <div className={style.eventImage}>
                 <div className={style.lazyLoadContainer}>
                   <LazyLoadImage
                     className={style.lazyLoad}
@@ -48,7 +45,6 @@ const Events = () => {
             </li>
           ))}
         </ul>
-        {/* </div> */}
       </div>
     </>
   );

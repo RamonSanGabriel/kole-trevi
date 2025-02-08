@@ -1,7 +1,5 @@
-// import { NavLink } from 'react-router-dom';
 import { photoDetails, photoList } from '../../../data/photos.js';
 import style from '../../Categories/CategoryCommon.module.css';
-
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { useEffect } from 'react';

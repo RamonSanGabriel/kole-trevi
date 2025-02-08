@@ -1,6 +1,4 @@
-import css from './Books.module.css';
 import style from '../../Categories/CategoryCommon.module.css';
-
 import { bookDetails, bookList } from '../../../data/book.js';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -16,7 +14,6 @@ const Books = () => {
   }, []);
   return (
     <>
-      {/* <CategoryHome /> */}
       <div className={style.bookWrapper}>
         <div className={style.bookDetails}>
           <h2>{title}</h2>
