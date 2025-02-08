@@ -11,7 +11,7 @@ import vidImage9 from '../images/VideoImages/videoImage9.jpg';
 export const videoDetails = {
   title: 'Video Category List',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa quisquam? Atque consequuntur quasi pariatur vero temporibus. Asperiores eveniet dicta quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt veritatis commodi recusandae quasi pariatur omnis totam optio cumque facere. ',
+    "The video category section shows a snippet of Trevi's adventures. He is always curious and excited to meet the different creatures he sees from his books. This kind of experience boost his confidence and makes him brave by overcoming his fears.",
 };
 export const videoList = [
   {

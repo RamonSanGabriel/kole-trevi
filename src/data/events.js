@@ -27,7 +27,7 @@ import event12small from '../images/EventImages/Event12-small.jpg';
 export const eventDetails = {
   title: 'Event Category List',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa quisquam? Atque consequuntur quasi pariatur vero temporibus. Asperiores eveniet dicta quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt veritatis commodi recusandae quasi pariatur omnis totam optio cumque facere. ',
+    'The event category section shows the events that Trevi attended in the past months. He loves trying out new things, cooking and baking are one of things he likes to do.',
 };
 
 export const eventList = [

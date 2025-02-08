@@ -20,7 +20,7 @@ import photo9small from '../images/PhotoImages/photo9-small.jpg';
 export const photoDetails = {
   title: 'Photo Category List',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa quisquam? Atque consequuntur quasi pariatur vero temporibus. Asperiores eveniet dicta quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt veritatis commodi recusandae quasi pariatur omnis totam optio cumque facere.  ',
+    "The photo category section shows a list of gallery items in which you can see the different sides of Trevi's personality. He is smart, creative, funny, loving and a sweet boy that loves to play and enjoy life in his own little ways.",
 };
 
 export const photoList = [

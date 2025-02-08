@@ -14,7 +14,7 @@ import toy6small from '../images/ToysImages/Toy6-small.jpg';
 export const toyDetails = {
   title: 'Toy Category List',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa quisquam? Atque consequuntur quasi pariatur vero temporibus. Asperiores eveniet dicta quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt veritatis commodi recusandae quasi pariatur omnis totam optio cumque facere. ',
+    'The toy category section shows a list of gallery items for kids toy in which your child might interested or give you an idea of the cool stuffs that are available in the market nowadays. Trevi loves dinosaurs, construction equipment and space hence these are his favorite toys.',
 };
 export const toyList = [
   {

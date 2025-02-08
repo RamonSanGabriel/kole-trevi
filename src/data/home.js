@@ -1,6 +1,10 @@
 export const homeAbout = {
   title: 'About me',
   greeting: "Hi, I'm Trevi!",
-  description:
-    'ipsum dolor sit amet consectetur adipisicing elit. Beatae, porro nulla, repellendus quod ullam aperiam quo aspernatur vel sequi nisi, eum dolorem tempora neque repudiandae eos exercitationem quasi dolores. Maiores dignissimos reprehenderit placeat voluptate eum fugiat blanditiis excepturi, asperiores quas at expedita ab eaque a ratione doloremque? Fuga id possimus ad quas, aspernatur maiores nam recusandae voluptatum sed. Odit, numquam quaerat in voluptatum nihil sit fuga ipsa illum placeat tempore sed quas aperiam ad reprehenderit inventore perspiciatis? Eos quam inventore distinctio debitis blanditiis fuga? Natus repudiandae, quasi aut dicta labore reprehenderit laudantium neque odit. Alias reiciendis ipsa enim fugit natus. Odit, dolor. Aperiam ullam iure quibusdam commodi dolorem. Porro incidunt, dignissimos, iste sapiente architecto placeat enim perferendis dolores distinctio illo magnam aliquam dicta dolorum reiciendis nihil asperiores vero dolorem aut ad nam nemo! Facere, earum saepe! Quod quibusdam temporibus perferendis natus vel, nisi numquam laudantium rem doloremque! Harum, in doloribus. ',
+  paragraph1:
+    "Thank you for visiting my page! My dad created this website for me so that when I am bigger, I'll be able to see all the memories we created alongside with my mom. On this page, you'll be able to know more about me and I hope that you will also be a part of my journey.",
+  paragraph2:
+    'This 2025, I am currently 5 years old and going to school as kindergarten II. Going to school is one of things I look forward to everyday because I enjoy doing all the activities in the classroom and loves being with my teachers and classmates/friends. I consider my school as my second home because it is where all the new learning and experience are happening.',
+
+  paragraph3: 'Please join me create new memories with our family and friends.',
 };

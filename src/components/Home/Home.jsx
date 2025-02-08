@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { homeAbout } from '../../data/home';
 
 const Home = () => {
-  const { description, greeting } = homeAbout;
+  const { paragraph1, paragraph2, paragraph3, greeting } = homeAbout;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -21,8 +21,10 @@ const Home = () => {
             <h2 className="aboutMe">About me</h2>
             <p>
               <strong>{greeting}&nbsp;</strong>
-              {description}
+              {paragraph1}
             </p>
+            <p>{paragraph2}</p>
+            <p>{paragraph3}</p>
           </div>
         </div>
       </main>
