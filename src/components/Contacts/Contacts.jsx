@@ -1,6 +1,7 @@
 import css from './Contacts.module.css';
 import { contactDetails } from '../../data/contacts';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Socials } from '../Socials/Socials';
 
 const Contacts = () => {
   const { id, title, name, image, placeholder, message, thankYouMsg } =
@@ -27,12 +28,10 @@ const Contacts = () => {
           </div>
           <div className={css.detailsContainer}>
             <h2>{thankYouMsg}</h2>
-            <ul>
-              <li></li>
-            </ul>
           </div>
         </div>
       </div>
+      <Socials />
     </div>
   );
 };

@@ -8,5 +8,5 @@ export const contactDetails = {
   thankYouMsg: 'Thank you for contacting us!',
   image: contactImage1,
   placeholder: contactImage1small,
-  message: 'Message for Trevi....',
+  message: 'Message from Mom & Dad....',
 };

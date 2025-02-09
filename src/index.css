@@ -18,7 +18,7 @@
   --LOADER-COLOR-LIGHT: #f48c06;
   --LIGHT: #edf2f4;
 
-  font-synthesis: none;
+  /* font-synthesis: none; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
