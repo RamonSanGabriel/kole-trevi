@@ -10,12 +10,12 @@ import book5 from '../images/BookImages/book5.jpg';
 import book5small from '../images/BookImages/book5-small.jpg';
 import book6 from '../images/BookImages/book6.jpg';
 import book6small from '../images/BookImages/book6-small.jpg';
-import book7 from '../images/BookImages/book7.jpg';
-import book7small from '../images/BookImages/book7-small.jpg';
-import book8 from '../images/BookImages/book8.jpg';
-import book8small from '../images/BookImages/book8-small.jpg';
-import book9 from '../images/BookImages/book9.jpg';
-import book9small from '../images/BookImages/book9-small.jpg';
+// import book7 from '../images/BookImages/book7.jpg';
+// import book7small from '../images/BookImages/book7-small.jpg';
+// import book8 from '../images/BookImages/book8.jpg';
+// import book8small from '../images/BookImages/book8-small.jpg';
+// import book9 from '../images/BookImages/book9.jpg';
+// import book9small from '../images/BookImages/book9-small.jpg';
 
 export const bookDetails = {
   title: 'Book Category List',
@@ -78,31 +78,31 @@ export const bookList = [
     placeholder: book6small,
     src: 'https://images.unsplash.com/photo-1563417994954-2736db3bf2c9?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
-  {
-    id: 7,
-    name: 'Book',
-    price: 10.99,
-    description: 'This is book',
-    image: book7,
-    placeholder: book7small,
-    src: 'https://images.unsplash.com/photo-1604342162684-0cb7869cc445?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  },
-  {
-    id: 8,
-    name: 'Book',
-    price: 10.99,
-    description: 'This is book',
-    image: book8,
-    placeholder: book8small,
-    src: 'https://plus.unsplash.com/premium_photo-1664373233030-9e4f6fee47c5?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  },
-  {
-    id: 9,
-    name: 'Book',
-    price: 10.99,
-    description: 'This is book',
-    image: book9,
-    placeholder: book9small,
-    src: 'https://images.unsplash.com/photo-1526395050546-dc5b0fe8df5f?q=80&w=2624&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  },
+  // {
+  //   id: 7,
+  //   name: 'Book',
+  //   price: 10.99,
+  //   description: 'This is book',
+  //   image: book7,
+  //   placeholder: book7small,
+  //   src: 'https://images.unsplash.com/photo-1604342162684-0cb7869cc445?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  // },
+  // {
+  //   id: 8,
+  //   name: 'Book',
+  //   price: 10.99,
+  //   description: 'This is book',
+  //   image: book8,
+  //   placeholder: book8small,
+  //   src: 'https://plus.unsplash.com/premium_photo-1664373233030-9e4f6fee47c5?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  // },
+  // {
+  //   id: 9,
+  //   name: 'Book',
+  //   price: 10.99,
+  //   description: 'This is book',
+  //   image: book9,
+  //   placeholder: book9small,
+  //   src: 'https://images.unsplash.com/photo-1526395050546-dc5b0fe8df5f?q=80&w=2624&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  // },
 ];
