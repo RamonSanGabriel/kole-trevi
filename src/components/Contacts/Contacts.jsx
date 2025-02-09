@@ -27,11 +27,13 @@ const Contacts = () => {
             />
           </div>
           <div className={css.detailsContainer}>
-            <h2>{thankYouMsg}</h2>
+            <p>
+              <strong>{thankYouMsg}</strong>
+            </p>
+            <Socials />
           </div>
         </div>
       </div>
-      <Socials />
     </div>
   );
 };

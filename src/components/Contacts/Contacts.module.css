@@ -14,7 +14,8 @@
     display: flex;
     font-size: 0.625rem;
     padding: 0.5rem 0;
-    justify-content: space-around;
+    gap: 10px;
+    /* justify-content: space-around; */
   }
 }
 .profileContainer {
@@ -81,54 +82,25 @@
 }
 
 .detailsContainer {
-  & ul {
-    display: grid;
-    /* column-gap: 10px; */
-    /* align-items: center; */
-    font-size: 0.825rem;
-    grid-template-columns: 2fr 1fr;
-    row-gap: 10px;
+  display: grid;
+  /* column-gap: 10px; */
+  /* align-items: center; */
+  /* font-size: 0.825rem; */
+  grid-template-columns: repeat(1, 1fr);
+  /* row-gap: 5px; */
+  font-size: 1rem;
 
-    @media (width > 767px) {
-      font-size: 1.25rem;
-    }
-
-    & li p {
-      text-align: left;
-      margin: 0;
-
-      @media (width > 767px) {
-        margin: 1rem 0;
-      }
-    }
+  @media (width > 767px) {
+    font-size: 2rem;
   }
-}
-.profileInterests {
-  & ul {
-    display: grid;
-    /* column-gap: 10px; */
-    /* align-items: center; */
-    font-size: 0.825rem;
-    grid-template-columns: 1fr;
-    row-gap: 10px;
+
+  & p {
+    margin: 1rem 0 0;
 
     @media (width > 767px) {
-      font-size: 1.25rem;
       margin: 1rem 0;
-    }
-
-    & li {
-      border: 1px solid #f0f0f0;
-      border-radius: 5px;
-      box-shadow: #b7b5b5;
-      background-color: #e2e2e214;
-      padding: 10px;
-      transition: all 250ms linear;
-
-      & p {
-        text-align: left;
-        margin: 0;
-      }
+      /* font-size: 2.5rem; */
+      /* font-weight: 700; */
     }
   }
 }
