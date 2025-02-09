@@ -27,9 +27,7 @@ const Contacts = () => {
             />
           </div>
           <div className={css.detailsContainer}>
-            <p>
-              <strong>{thankYouMsg}</strong>
-            </p>
+            <p>{thankYouMsg}</p>
             <Socials />
           </div>
         </div>

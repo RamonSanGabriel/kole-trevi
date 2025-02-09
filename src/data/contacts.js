@@ -5,7 +5,7 @@ export const contactDetails = {
   id: 1,
   title: 'Contacts Page',
   name: 'Mom and Dad with Trevi',
-  thankYouMsg: 'Thank you for contacting us!',
+  thankYouMsg: 'Thank you for your support!',
   image: contactImage1,
   placeholder: contactImage1small,
   message: 'Message from Mom & Dad....',
