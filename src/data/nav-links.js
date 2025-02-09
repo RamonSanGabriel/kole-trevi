@@ -16,9 +16,9 @@ export const navLinks = [
     path: '/category',
   },
 
-  // {
-  //   id: 4,
-  //   link: 'Contacts',
-  //   path: '/contacts',
-  // },
+  {
+    id: 4,
+    link: 'Contacts',
+    path: '/contacts',
+  },
 ];
