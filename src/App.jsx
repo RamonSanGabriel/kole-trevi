@@ -13,7 +13,6 @@ const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const CategoryPage = lazy(() => import('./pages/CategoryPage/CategoryPage'));
 const ProfilePage = lazy(() => import('./pages/ProfilePage/ProfilePage'));
 const ContactsPage = lazy(() => import('./pages/ContactsPage/ContactsPage'));
-const ServicesPage = lazy(() => import('./pages/ServicesPage/ServicesPage'));
 const HelpPage = lazy(() => import('./pages/HelpPage/HelpPage'));
 
 function App() {
@@ -36,7 +35,6 @@ function App() {
           </Route>
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/contacts" element={<ContactsPage />} />
-          <Route path="/services" element={<ServicesPage />} />
           <Route path="/help" element={<HelpPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
