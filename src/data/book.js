@@ -20,7 +20,7 @@ import book6small from '../images/BookImages/book6-small.jpg';
 export const bookDetails = {
   title: 'Book Category List',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nostrum saepe minus porro vitae voluptatibus nisi facilis in culpa quisquam? Atque consequuntur quasi pariatur vero temporibus. Asperiores eveniet dicta quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur deserunt veritatis commodi recusandae quasi pariatur omnis totam optio cumque facere. ',
+    "The book category section shows Trevi's favorite books because he loves to read especially the ones that have a singing part. It helps him improve his vocabulary so that he can communicate well with other people.",
 };
 
 export const bookList = [
