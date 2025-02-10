@@ -45,6 +45,20 @@
     box-shadow: 1px 1px 4px #b7b5b5;
   }
 }
+.bookImage,
+.eventImage,
+.photoImage,
+.toyImage {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.toyImageContainer {
+  width: 90%;
+}
 .lazyLoadContainer {
   transition-property: all;
   transition-duration: 250ms;
@@ -57,23 +71,13 @@
 .lazyLoad {
   cursor: pointer;
   object-fit: contain;
-  object-position: top;
-  width: 100%;
+  object-position: center;
+  width: 90%;
   max-height: 400px;
-}
-.bookImage,
-.eventImage,
-.photoImage,
-.toyImage {
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 /* Books */
 .bookImage img {
   height: 300px;
+  width: 90%;
 }

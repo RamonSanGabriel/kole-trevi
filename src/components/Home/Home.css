@@ -27,12 +27,3 @@
     color: var(--HIGHLIGHT-COLOR);
   }
 }
-.aboutMe {
-  /* padding: 1rem 0; */
-
-  @media (width > 767px) {
-    & h2 {
-      padding: 1rem;
-    }
-  }
-}

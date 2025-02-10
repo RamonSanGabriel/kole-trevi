@@ -9,7 +9,7 @@ const Profile = () => {
   //prettier-ignore
   const {name, dob, length, kg, time, nationality, birthplace, mother, father} = details;
   return (
-    <div className={css.profileWrapper}>
+    <>
       <div className={css.profileContainer}>
         <h1>{title}</h1>
         <h6>{message}</h6>
@@ -28,7 +28,7 @@ const Profile = () => {
               placeholderSrc={placeholder}
             />
           </div>
-          <div className={css.detailsContainer}>
+          <div className={css.profileDetailsContainer}>
             <ul>
               <li>
                 <p>
@@ -126,7 +126,7 @@ const Profile = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
