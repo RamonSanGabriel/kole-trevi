@@ -20,7 +20,7 @@ import photo9small from '../images/PhotoImages/photo9-small.jpg';
 export const photoDetails = {
   title: 'Photo Category List',
   description:
-    "The photo category section shows a list of gallery items in which you can see the different sides of Trevi's personality. He is smart, creative, funny, loving and a sweet boy that loves to play and enjoy life in his own little ways.",
+    'The photo category section presents a collection of gallery items that showcase the various facets of Trevi’s personality.',
 };
 
 export const photoList = [

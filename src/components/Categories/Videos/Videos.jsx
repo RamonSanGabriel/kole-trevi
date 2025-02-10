@@ -9,11 +9,11 @@ const Videos = () => {
   // const play = () => playerRef.current.play();
   // const pause = () => playerRef.current.pause();
 
-  const [play, setPlay] = useState();
+  // const [playing, setPlaying] = useState();
 
-  const handleClick = () => {
-    setPlay(play);
-  };
+  // const handleClick = () => {
+  //   setPlaying(playing);
+  // };
 
   const { title, description } = videoDetails;
 
@@ -30,7 +30,7 @@ const Videos = () => {
         </div>
         <ul className={style.videoList}>
           {videoList.map(({ id, name, description, url, image }) => (
-            <li key={id} onClick={handleClick}>
+            <li key={id}>
               <h4>
                 {name}&nbsp; {id}
               </h4>

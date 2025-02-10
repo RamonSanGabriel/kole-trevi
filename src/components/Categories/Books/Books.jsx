@@ -35,8 +35,6 @@ const Books = () => {
                       src={image}
                       alt={`book image ${id}`}
                       placeholderSrc={placeholder}
-                      // width={300}
-                      // height={300}
                     />
                   </div>
                 </div>

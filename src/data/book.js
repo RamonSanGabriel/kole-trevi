@@ -20,7 +20,7 @@ import book6small from '../images/BookImages/book6-small.jpg';
 export const bookDetails = {
   title: 'Book Category List',
   description:
-    "The book category section shows Trevi's favorite books because he loves to read especially the ones that have a singing part. It helps him improve his vocabulary so that he can communicate well with other people.",
+    'Trevi’s favorite books are displayed in the book category section of the website because he enjoys reading, particularly those with singing parts. Reading these books helps him expand his vocabulary, which enhances his communication skills with others.',
 };
 
 export const bookList = [

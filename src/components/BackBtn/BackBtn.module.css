@@ -18,7 +18,6 @@
     display: none;
   }
   &:hover {
-    /* background-color: var(--LOADER-COLOR-LIGHT); */
     opacity: 1;
   }
 }

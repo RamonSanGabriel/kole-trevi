@@ -14,7 +14,7 @@ import toy6small from '../images/ToysImages/Toy6-small.jpg';
 export const toyDetails = {
   title: 'Toy Category List',
   description:
-    'The toy category section shows a list of gallery items for kids toy in which your child might interested or give you an idea of the cool stuffs that are available in the market nowadays. Trevi loves dinosaurs, construction equipment and space hence these are his favorite toys.',
+    'The toy category section of the gallery features a list of visually appealing items that are popular among children. This section serves as a valuable resource for parents, providing them with an idea of the exciting and innovative toys available in the market today.',
 };
 export const toyList = [
   {

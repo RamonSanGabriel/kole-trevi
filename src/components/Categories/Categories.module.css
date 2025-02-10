@@ -1,6 +1,6 @@
 .categoryDetails {
-  font-size: 1rem;
-  text-align: center;
+  /* font-size: 1rem; */
+  /* text-align: center; */
 
   & h1 {
     margin-top: 1rem;
@@ -26,12 +26,12 @@
     padding: 0 1rem;
 
     @media (width > 767px) {
-      display: grid;
+      /* display: grid; */
       grid-template-columns: repeat(1, 1fr 2fr);
-      align-items: top;
-      text-align: left;
-      padding: 0 1rem;
-      font-size: 1rem;
+      /* align-items: top; */
+      /* text-align: left; */
+      /* padding: 0 1rem; */
+      /* font-size: 1rem; */
     }
   }
 }
@@ -48,7 +48,7 @@
     justify-content: space-around;
 
     & li {
-      text-align: center;
+      /* text-align: center; */
     }
   }
 }

@@ -27,7 +27,7 @@ import event12small from '../images/EventImages/Event12-small.jpg';
 export const eventDetails = {
   title: 'Event Category List',
   description:
-    'The event category section shows the events that Trevi attended in the past months. He loves trying out new things, cooking and baking are one of things he likes to do.',
+    'The event category section shows the events that Trevi attended in the past few months. He loves trying out new things; cooking and baking are things he likes to do.',
 };
 
 export const eventList = [

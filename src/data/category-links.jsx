@@ -11,27 +11,30 @@ export const categoryOptions = [
   {
     id: 1,
     cname: 'Toys',
-    cdescription: 'The first icon will show all the available toys.',
+    cdescription:
+      'The first icon will display a list of all the available toys.',
   },
   {
     id: 2,
     cname: 'Photos',
-    cdescription: 'The second icon will show all the available photos.',
+    cdescription: 'The second icon will display all the available photos.',
   },
   {
     id: 3,
     cname: 'Event',
-    cdescription: 'The third icon will show all the available events.',
+    cdescription: 'The third icon will display a list of all the past events.',
   },
   {
     id: 4,
     cname: 'Books',
-    cdescription: 'The fourth icon will show all the available books.',
+    cdescription:
+      'The fourth icon will display a list of all the available books.',
   },
   {
     id: 5,
     cname: 'Videos',
-    cdescription: 'The fifth icon will show all the available videos.',
+    cdescription:
+      'The fifth icon will display a list of all the available videos.',
   },
 ];
 

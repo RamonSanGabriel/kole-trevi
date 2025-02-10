@@ -24,7 +24,6 @@ const Toys = () => {
                 {name}&nbsp; {id}
               </h4>
               <div className={style.toyImage}>
-                {/* <div className={style.toyImageContainer}> */}
                 <div className={style.lazyLoadContainer}>
                   <LazyLoadImage
                     className={style.lazyLoad}
@@ -34,7 +33,6 @@ const Toys = () => {
                     placeholderSrc={placeholder}
                   />
                 </div>
-                {/* </div> */}
               </div>
               <p>
                 {description}&nbsp;{id}
