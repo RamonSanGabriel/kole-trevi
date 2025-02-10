@@ -49,12 +49,11 @@
 .eventImage,
 .photoImage,
 .toyImage {
-  width: 100%;
   overflow: hidden;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 .toyImageContainer {
   width: 90%;
