@@ -14,7 +14,7 @@ const MenuDesk = () => {
                 isActive ? css.menuLinkActive : css.menuLink
               }
               to={path}
-              onClick={() => setIsOpen(prev)}
+              // onClick={() => setIsOpen(prev)}
             >
               <span>
                 {icon}
